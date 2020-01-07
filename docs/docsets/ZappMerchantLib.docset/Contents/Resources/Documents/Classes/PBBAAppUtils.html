@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PBBAAppUtils Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PBBAAppUtils" class="dashAnchor"></a>
+    <a title="PBBAAppUtils Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ZappMerchantLib Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/vocalinkzapp/pbba-merchant-button-library-ios-R4"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ZappMerchantLib Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PBBAAppUtils Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAAppUtils.html">PBBAAppUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAButton.html">PBBAButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PBBAButtonDelegate.html">PBBAButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/PBBACustomUXType.html">PBBACustomUXType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PBBAAppUtils</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">PBBAAppUtils</span></code></pre>
+
+                </div>
+              </div>
+            <p>The utils class with helper methods.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)isCFIAppAvailableForRequestType:"></a>
+                    <a name="//apple_ref/objc/Method/+isCFIAppAvailableForRequestType:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)isCFIAppAvailableForRequestType:">+isCFIAppAvailableForRequestType:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if at least one PBBA enabled CFI app is installed on the current device for the given request type.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>You must whitelist first the &lsquo;zapp&rsquo; and &lsquo;zapp-r4&rsquo; scheme in your Info.plist file under the LSApplicationQueriesSchemes key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">isCFIAppAvailableForRequestType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">requestType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PBBA API request type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if CFI app is installed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)openBankingApp:requestType:"></a>
+                    <a name="//apple_ref/objc/Method/+openBankingApp:requestType:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)openBankingApp:requestType:">+openBankingApp:requestType:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Open the PBBA enabled CFI app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">openBankingApp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span> <span class="nf">requestType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">requestType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure token to retrieve the transaction details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PBBA API request type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the process of hand-off to CFI app was successful.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)showPBBAPopup:secureToken:brn:expiryInterval:requestType:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/+showPBBAPopup:secureToken:brn:expiryInterval:requestType:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)showPBBAPopup:secureToken:brn:expiryInterval:requestType:delegate:">+showPBBAPopup:secureToken:brn:expiryInterval:requestType:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show PBBA popup view controller.</p>
+
+<p>It opens the CFI app automatically (without displaying the popup) if the device has CFI app installed and the user has tapped &lsquo;Open banking app&rsquo; button.
+  Before opening the CFI app automatically it will also close any instance of error PBBAPopupViewController which is presented.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a></span> <span class="o">*</span><span class="p">)</span>
+     <span class="nf">showPBBAPopup</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">presenter</span>
+       <span class="nf">secureToken</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span>
+               <span class="nf">brn</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">brn</span>
+    <span class="nf">expiryInterval</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">expiryInterval</span>
+       <span class="nf">requestType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">requestType</span>
+          <span class="nf">delegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presenter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presenter controller which will present the popup view controller.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The human friendly transaction retrieval identifier issued by Zapp.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>brn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Basket Reference Number for entry in the CFI app on the consumer’s device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>expiryInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time interval defined by the zapp core in order to confirm the payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PBBA API request type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The popup view controller delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAPopupViewController which has been presented.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)showPBBAErrorPopup:errorCode:errorTitle:errorMessage:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/+showPBBAErrorPopup:errorCode:errorTitle:errorMessage:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)showPBBAErrorPopup:errorCode:errorTitle:errorMessage:delegate:">+showPBBAErrorPopup:errorCode:errorTitle:errorMessage:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show PBBA error popup view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">showPBBAErrorPopup</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">presenter</span>
+             <span class="nf">errorCode</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorCode</span>
+            <span class="nf">errorTitle</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorTitle</span>
+          <span class="nf">errorMessage</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorMessage</span>
+              <span class="nf">delegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presenter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presenter controller which will present the popup view controller.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error code to be displayed inside the popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error title to be displayed inside the popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error message to be displayed inside the popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The popup view controller delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAPopupViewController which has been presented.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)showPBBAMoreAboutPopup:withLogosService:"></a>
+                    <a name="//apple_ref/objc/Method/+showPBBAMoreAboutPopup:withLogosService:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)showPBBAMoreAboutPopup:withLogosService:">+showPBBAMoreAboutPopup:withLogosService:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show PBBA More About popup view controller.</p>
+
+<p>It opens the &ldquo;More about PBBA&rdquo; popup, containing bank logos</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">showPBBAMoreAboutPopup</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">presenter</span>
+          <span class="nf">withLogosService</span><span class="p">:(</span><span class="n">PBBABankLogosService</span> <span class="o">*</span><span class="p">)</span><span class="nv">logosService</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presenter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presenter controller which will present the popup view controller.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logosService</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The logos service which will provide the popup with bank logos.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAMoreAboutViewController which has been presented.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)getCustomUXConfigurationsWithWidth:andType:"></a>
+                    <a name="//apple_ref/objc/Method/+getCustomUXConfigurationsWithWidth:andType:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)getCustomUXConfigurationsWithWidth:andType:">+getCustomUXConfigurationsWithWidth:andType:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>API to get PBBA integrated button component.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">getCustomUXConfigurationsWithWidth</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">width</span>
+                                 <span class="nf">andType</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions/PBBACustomUXType.html">PBBACustomUXType</a></span><span class="p">)</span><span class="nv">customUXType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>for integrated button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customUXType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PBBACustomUXType enum for CustomUXType.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UIVIew instance based on the configurations for PBBA branding logo
+cfi logos and More About button.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Deprecated"></a>
+                <a name="//apple_ref/objc/Section/Deprecated" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Deprecated"></a>
+                  <h3 class="section-name"><p>Deprecated</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)isCFIAppAvailable"></a>
+                    <a name="//apple_ref/objc/Method/+isCFIAppAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)isCFIAppAvailable">+isCFIAppAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if at least one PBBA enabled CFI app is installed on the current device.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    You must whitelist first the &lsquo;zapp&rsquo; scheme in your Info.plist file under the LSApplicationQueriesSchemes key.
+
+</div><div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method is deprecated. Please use <code><a href="../Classes/PBBAAppUtils.html#/c:objc(cs)PBBAAppUtils(cm)isCFIAppAvailableForRequestType:">+[PBBAAppUtils isCFIAppAvailableForRequestType:]</a></code> method instead.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">isCFIAppAvailable</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if CFI app is installed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)openBankingApp:"></a>
+                    <a name="//apple_ref/objc/Method/+openBankingApp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)openBankingApp:">+openBankingApp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Open the PBBA enabled CFI app.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method is deprecated. Please use <code><a href="../Classes/PBBAAppUtils.html#/c:objc(cs)PBBAAppUtils(cm)openBankingApp:requestType:">+[PBBAAppUtils openBankingApp:requestType:]</a></code> method instead.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">openBankingApp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure token to retrieve the transaction details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the process of hand-off to CFI app was successful.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAAppUtils(cm)showPBBAPopup:secureToken:brn:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/+showPBBAPopup:secureToken:brn:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAAppUtils(cm)showPBBAPopup:secureToken:brn:delegate:">+showPBBAPopup:secureToken:brn:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show PBBA popup view controller.</p>
+
+<p>It opens the CFI app automatically (without displaying the popup) if the device has CFI app installed and the user has tapped &lsquo;Open banking app&rsquo; button.
+  Before opening the CFI app automatically it will also close any instance of error PBBAPopupViewController which is presented.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method is deprecated. Please use <code>+[PBBAAppUtils showPBBAPopup:secureToken:brn:requestType:delegate:]</code> method instead.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">showPBBAPopup</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">presenter</span>
+      <span class="nf">secureToken</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span>
+              <span class="nf">brn</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">brn</span>
+         <span class="nf">delegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presenter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The presenter controller which will present the popup view controller.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The human friendly transaction retrieval identifier issued by Zapp.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>brn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Basket Reference Number for entry in the CFI app on the consumer’s device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The popup view controller delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAPopupViewController which has been presented.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>IPCO 2012 Limited</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

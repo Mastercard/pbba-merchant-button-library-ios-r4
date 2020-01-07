@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PBBAPopupViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PBBAPopupViewController" class="dashAnchor"></a>
+    <a title="PBBAPopupViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ZappMerchantLib Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/vocalinkzapp/pbba-merchant-button-library-ios-R4"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ZappMerchantLib Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PBBAPopupViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAAppUtils.html">PBBAAppUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAButton.html">PBBAButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PBBAPopupViewController.html">PBBAPopupViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PBBAButtonDelegate.html">PBBAButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/PBBACustomUXType.html">PBBACustomUXType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PBBAPopupViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">PBBAPopupViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>PBBA popup view controller.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)expiryInterval"></a>
+                    <a name="//apple_ref/objc/Property/expiryInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)expiryInterval">expiryInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The expiration interval to be shown in the popup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">int</span> <span class="n">expiryInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)secureToken"></a>
+                    <a name="//apple_ref/objc/Property/secureToken" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)secureToken">secureToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The human friendly transaction retrieval identifier issued by Zapp.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">secureToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)brn"></a>
+                    <a name="//apple_ref/objc/Property/brn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)brn">brn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Basket Reference Number for entry in the CFI app on the consumer’s device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">brn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)errorCode"></a>
+                    <a name="//apple_ref/objc/Property/errorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)errorCode">errorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error code to be displayed inside the error popup.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">errorCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)errorTitle"></a>
+                    <a name="//apple_ref/objc/Property/errorTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)errorTitle">errorTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error title to be displayed inside the error popup.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">errorTitle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)errorMessage"></a>
+                    <a name="//apple_ref/objc/Property/errorMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)errorMessage">errorMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error message to be displayed inside the error popup.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">errorMessage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The popup view controller delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span>
+    <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(im)setSecureToken:brn:requestType:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/-setSecureToken:brn:requestType:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(im)setSecureToken:brn:requestType:delegate:">-setSecureToken:brn:requestType:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an instance of PBBA popup view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSecureToken</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span>
+                   <span class="nf">brn</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">brn</span>
+           <span class="nf">requestType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">requestType</span>
+              <span class="nf">delegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The human friendly transaction retrieval identifier issued by Zapp.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>brn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Basket Reference Number for entry in the CFI app on the consumer’s device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PBBA API request type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The popup view controller delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAPopupViewController.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(im)setErrorCode:errorTitle:errorMessage:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/-setErrorCode:errorTitle:errorMessage:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(im)setErrorCode:errorTitle:errorMessage:delegate:">-setErrorCode:errorTitle:errorMessage:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an instance of PBBA error popup view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setErrorCode</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorCode</span>
+          <span class="nf">errorTitle</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorTitle</span>
+        <span class="nf">errorMessage</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorMessage</span>
+            <span class="nf">delegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PBBAPopupViewControllerDelegate.html">PBBAPopupViewControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error code to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error title to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error message to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The popup view controller delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PBBAPopupViewController.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(im)updateSecureToken:brn:"></a>
+                    <a name="//apple_ref/objc/Method/-updateSecureToken:brn:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(im)updateSecureToken:brn:">-updateSecureToken:brn:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update the instance of PBBA popup view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateSecureToken</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">secureToken</span> <span class="nf">brn</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">brn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secureToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The human friendly transaction retrieval identifier issued by Zapp.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>brn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Basket Reference Number for entry in the CFI app on the consumer’s device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The instance of PBBAPopupViewController.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(im)updateErrorCode:errorTitle:errorMessage:"></a>
+                    <a name="//apple_ref/objc/Method/-updateErrorCode:errorTitle:errorMessage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(im)updateErrorCode:errorTitle:errorMessage:">-updateErrorCode:errorTitle:errorMessage:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update the instance of PBBA popup view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateErrorCode</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorCode</span>
+             <span class="nf">errorTitle</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorTitle</span>
+           <span class="nf">errorMessage</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">errorMessage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error code to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error title to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error message to be displayed inside the error popup.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The instance of PBBAPopupViewController.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PBBAPopupViewController(im)updateForMoreAboutWithBankLogosService:"></a>
+                    <a name="//apple_ref/objc/Method/-updateForMoreAboutWithBankLogosService:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PBBAPopupViewController(im)updateForMoreAboutWithBankLogosService:">-updateForMoreAboutWithBankLogosService:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update the instance of PBBA popup view controller
+for More About Layout.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateForMoreAboutWithBankLogosService</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">PBBABankLogosService</span> <span class="o">*</span><span class="p">)</span><span class="nv">logosService</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logosService</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The logosService</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>IPCO 2012 Limited</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

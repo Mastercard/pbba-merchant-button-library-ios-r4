@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 115,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 115,
+      "symbol": "PBBACustomUXType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 115,
+      "symbol": "PBBACustomUXType.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 116,
+      "symbol": ".PBBACustomButtonTypeMoreAboutAndBankLogos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 116,
+      "symbol": "PBBACustomUXType..PBBACustomButtonTypeMoreAboutAndBankLogos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 117,
+      "symbol": ".PBBACustomButtonTypeBankLogos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 117,
+      "symbol": "PBBACustomUXType..PBBACustomButtonTypeBankLogos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 118,
+      "symbol": ".PBBACustomButtonTypeMoreAbout",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 118,
+      "symbol": "PBBACustomUXType..PBBACustomButtonTypeMoreAbout",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 119,
+      "symbol": ".PBBACustomButtonTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 119,
+      "symbol": "PBBACustomUXType..PBBACustomButtonTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBAAppUtils.h",
+      "line": 134,
+      "symbol": "PBBAAppUtils(Deprecated)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4/ZappMerchantLib/PBBATypes.h",
+      "line": 40,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mac/Documents/Vocalink_Workspace/GitHub Repos/MerchantLib-R4"
+}

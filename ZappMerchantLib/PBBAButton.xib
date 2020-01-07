@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkOffcForMC-Bold.ttf">
+            <string>MarkOffcForMC-Bold</string>
+        </array>
+        <array key="MarkOffcForMC.ttf">
+            <string>MarkOffcForMC</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PBBAButton"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9e9-Wz-KS6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="8T9-52-YyV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="com.zapp.pbba.button.moreAbout" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp0-Bk-cEa">
+                    <rect key="frame" x="0.0" y="64" width="320" height="25"/>
+                    <accessibility key="accessibilityConfiguration" identifier="com.zapp.pbba.button.moreAbout"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="mAz-xt-RYT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkOffcForMC-Bold" family="Mark Offc For MC" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="More about Pay by Bank app" image="icon-more-about-pbba">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay securely using your own banking app." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6C-GJ-9u8">
+                    <rect key="frame" x="0.0" y="50" width="320" height="16"/>
+                    <accessibility key="accessibilityConfiguration" identifier="com.zapp.pbba.button.details"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="QxS-fN-HRy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="H6C-GJ-9u8" secondAttribute="trailing" id="5TE-bT-0Ei"/>
+                <constraint firstAttribute="trailing" secondItem="9e9-Wz-KS6" secondAttribute="trailing" id="9hC-13-fLt"/>
+                <constraint firstItem="H6C-GJ-9u8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FHR-wQ-Hec"/>
+                <constraint firstAttribute="bottom" secondItem="pp0-Bk-cEa" secondAttribute="bottom" id="T5k-lF-fOH"/>
+                <constraint firstItem="9e9-Wz-KS6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bhq-RO-urn"/>
+                <constraint firstItem="9e9-Wz-KS6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fiz-RJ-XQM"/>
+                <constraint firstAttribute="trailing" secondItem="pp0-Bk-cEa" secondAttribute="trailing" id="so9-e8-hFr"/>
+                <constraint firstItem="H6C-GJ-9u8" firstAttribute="top" secondItem="9e9-Wz-KS6" secondAttribute="bottom" constant="2" id="vLD-Du-s66"/>
+                <constraint firstItem="pp0-Bk-cEa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xzP-hr-Vwb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-153.59999999999999" y="-20.689655172413794"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-more-about-pbba" width="16" height="16"/>
+    </resources>
+</document>

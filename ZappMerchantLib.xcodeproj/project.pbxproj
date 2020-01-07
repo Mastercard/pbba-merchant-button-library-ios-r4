@@ -1,0 +1,1675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A2DD809C18EEE76300288F11 /* ZappMerchantSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A2DD809F18EEE76300288F11 /* Build configuration list for PBXAggregateTarget "ZappMerchantSDK" */;
+			buildPhases = (
+				CD06BC481B6BB8BC00BA886C /* Build Framework & Export Products */,
+			);
+			dependencies = (
+				CD6CBC591BA70611006899D6 /* PBXTargetDependency */,
+			);
+			name = ZappMerchantSDK;
+			productName = ZappMerchantSDK;
+		};
+		CD6CBC511BA703CE006899D6 /* ZappMerchantLibFat */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD6CBC521BA703CE006899D6 /* Build configuration list for PBXAggregateTarget "ZappMerchantLibFat" */;
+			buildPhases = (
+				CD6CBC551BA703D7006899D6 /* Build Fat Lib */,
+			);
+			dependencies = (
+				CD8F88C01BB5A1FF00E754B6 /* PBXTargetDependency */,
+			);
+			name = ZappMerchantLibFat;
+			productName = ZappMerchantLibFat;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		043C9DA4215946F7002E9162 /* PBBACustomUXConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */; };
+		043C9DA5215946F7002E9162 /* PBBACustomUXConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C9DA3215946F7002E9162 /* PBBACustomUXConfig.m */; };
+		04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C376BE216D10B100E5755A /* PBBAPopup.storyboard */; };
+		14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
+		14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */; };
+		14C10B561F87DEE600702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
+		14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
+		14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */; };
+		5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AF003B01B8DEB9B007C7980 /* Localizable.strings */; };
+		744148916F89CDBD1AEF0D3D /* libPods-ZappMerchantLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */; };
+		8A34BB12219ED1DE00AF8787 /* MarkOffcForMC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */; };
+		8A34BB13219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */; };
+		8A34BB14219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */; };
+		8A34BB15219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */; };
+		8A3AB260218B259D005FF72A /* PBBAPopupContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */; };
+		8A3AB261218B259D005FF72A /* PBBAPopupContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */; };
+		8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB266218B32ED005FF72A /* PBBAErrorView.h */; };
+		8A3AB269218B32ED005FF72A /* PBBAErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB267218B32ED005FF72A /* PBBAErrorView.m */; };
+		8A3AB26C218B49F0005FF72A /* NSError+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB26A218B49F0005FF72A /* NSError+ZPMLib.h */; };
+		8A3AB26D218B49F0005FF72A /* NSError+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB26B218B49F0005FF72A /* NSError+ZPMLib.m */; };
+		8A8D89CF216DCEAE005B580E /* PBBAButtonMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D89CC216DCEAD005B580E /* PBBAButtonMain.m */; };
+		8A8D89D0216DCEAE005B580E /* PBBAButtonMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89CD216DCEAE005B580E /* PBBAButtonMain.h */; };
+		8A8D89D1216DCEB9005B580E /* PBBAButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D89CB216DCEAD005B580E /* PBBAButton.xib */; };
+		8A8D89D2216DCEB9005B580E /* PBBAButtonMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D89CE216DCEAE005B580E /* PBBAButtonMain.xib */; };
+		8A8D89DA216DD3C7005B580E /* PBBABankLogo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D4216DD3C6005B580E /* PBBABankLogo.h */; };
+		8A8D89DB216DD3C7005B580E /* PBBABankLogosService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D89D5216DD3C6005B580E /* PBBABankLogosService.m */; };
+		8A8D89DC216DD3C7005B580E /* PBBANetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D89D6216DD3C6005B580E /* PBBANetworkService.m */; };
+		8A8D89DD216DD3C7005B580E /* PBBANetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D7216DD3C6005B580E /* PBBANetworkService.h */; };
+		8A8D89DE216DD3C7005B580E /* PBBABankLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D89D8216DD3C7005B580E /* PBBABankLogo.m */; };
+		8A8D89DF216DD3C7005B580E /* PBBABankLogosService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D9216DD3C7005B580E /* PBBABankLogosService.h */; };
+		8AA851342149276100B4556F /* PBBABankLogosContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8512D2149276000B4556F /* PBBABankLogosContainer.m */; };
+		8AA851352149276100B4556F /* PBBABankLogosContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA8512F2149276000B4556F /* PBBABankLogosContainer.h */; };
+		8AA851362149276100B4556F /* PBBAMoreAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA851302149276000B4556F /* PBBAMoreAboutViewController.h */; };
+		8AA851372149276100B4556F /* PBBAMoreAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA851332149276100B4556F /* PBBAMoreAboutViewController.m */; };
+		8AA851462149281D00B4556F /* PBBABankLogosLayouts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA851322149276100B4556F /* PBBABankLogosLayouts.xib */; };
+		8AA851472149282000B4556F /* PBBABankLogosContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA8512E2149276000B4556F /* PBBABankLogosContainer.xib */; };
+		8AC78D7121763DAB00405FF3 /* PBBAExpiryTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC78D6F21763DAB00405FF3 /* PBBAExpiryTimer.h */; };
+		8AC78D7221763DAB00405FF3 /* PBBAExpiryTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC78D7021763DAB00405FF3 /* PBBAExpiryTimer.m */; };
+		8AD714CF219D660C0083C296 /* PBBABankLogosCommonLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD714CE219D660C0083C296 /* PBBABankLogosCommonLayout.xib */; };
+		A2D12A8519640BE30064590B /* UIImage+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D12A8419640BE30064590B /* UIImage+ZPMLib.m */; };
+		A2FC5E1321AC1D1A000625F6 /* PBBACustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5E0F21AC1D1A000625F6 /* PBBACustomButton.m */; };
+		A2FC5E1421AC1D1A000625F6 /* PBBACustomButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FC5E1221AC1D1A000625F6 /* PBBACustomButton.h */; };
+		A2FC5E1521AC1D36000625F6 /* PBBACustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FC5E1121AC1D1A000625F6 /* PBBACustomButton.xib */; };
+		A2FC5E1C21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FC5E1B21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib */; };
+		A2FC5E2B21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FC5E2A21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib */; };
+		A2FC5E2E21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5E2C21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m */; };
+		A2FC5E2F21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FC5E2D21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h */; };
+		A76635D0188D3AB300D6C26C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76635CF188D3AB300D6C26C /* Foundation.framework */; };
+		A76635DF188D3AB300D6C26C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76635CF188D3AB300D6C26C /* Foundation.framework */; };
+		A76635EA188D3AB300D6C26C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A76635E8188D3AB300D6C26C /* InfoPlist.strings */; };
+		C81AB9281B6A799600B621A2 /* ZappMerchantLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */; };
+		C81AB93A1B6A7E9200B621A2 /* NSAttributedString+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */; };
+		C81AB93B1B6A7E9200B621A2 /* NSBundle+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */; };
+		C81AB93D1B6A7E9300B621A2 /* UIColor+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */; };
+		C81AB93F1B6A7E9300B621A2 /* UIFont+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */; };
+		C81AB9401B6A7E9300B621A2 /* UIImage+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */; };
+		C81AB9421B6A7EC200B621A2 /* NSBundle+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3A0B3F18D7659B002994E4 /* NSBundle+ZPMLib.m */; };
+		C81AB95B1B6A81D500B621A2 /* PBBAUIElementAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */; };
+		C81AB95D1B6A81D500B621A2 /* PBBACodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = C818C1D81B5653CC00A7514A /* PBBACodeView.h */; };
+		C81AB9621B6A81D500B621A2 /* PBBAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC4374518D306E8004DBB05 /* PBBAButton.h */; };
+		C81AB9631B6A81D500B621A2 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; };
+		C84BD0D01B625E1E00B7B1B1 /* PBBACodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C818C1D91B5653CC00A7514A /* PBBACodeView.m */; };
+		C88B84EA1B62972B00FEB5A7 /* PBBAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC4374618D306E8004DBB05 /* PBBAButton.m */; };
+		C88DA6D51B70C5E600EAFC81 /* PBBAPopupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C88DA6D31B70C5E600EAFC81 /* PBBAPopupButton.m */; };
+		CD21761C1D24273000DA032D /* PBBAMComViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2176191D24273000DA032D /* PBBAMComViewController.h */; };
+		CD21761D1D24273000DA032D /* PBBAMComViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21761A1D24273000DA032D /* PBBAMComViewController.m */; };
+		CD3A0B3C18D75C4C002994E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A0B3B18D75C4C002994E4 /* UIKit.framework */; };
+		CD3BBEA11C90607D0096B732 /* PBBAPopupCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */; };
+		CD3BBEA21C90607D0096B732 /* PBBAPopupCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3BBEA01C90607D0096B732 /* PBBAPopupCoordinator.m */; };
+		CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */; };
+		CD3E3CE61D25375600EB58EB /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */; };
+		CD3E3CE81D25375600EB58EB /* PBBAAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7461F21D23FCE1007EB6D3 /* PBBAAppearance.h */; };
+		CD3E3CE91D25375600EB58EB /* PBBAAutoLoadableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */; };
+		CD3E3CED1D25375600EB58EB /* PBBAPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */; };
+		CD3E3CEE1D25375600EB58EB /* PBBAPopupContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */; };
+		CD3E3CF11D25375600EB58EB /* PBBAMComViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2176191D24273000DA032D /* PBBAMComViewController.h */; };
+		CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */; };
+		CD3F2B9F1D23FA27008A5D0D /* PBBAPopupAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F2B9D1D23FA27008A5D0D /* PBBAPopupAnimator.m */; };
+		CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */; };
+		CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43B7161CFDCEA400A85880 /* UIView+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */; };
+		CD43B7191CFDCEA400A85880 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */; };
+		CD43B71A1CFDCEA400A85880 /* PBBAAppearanceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4F89A21C981EEC009DE460 /* PBBAAppearanceProxy.h */; };
+		CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE4C1C88409000F27CC2 /* PBBAPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43B7211CFDCEA400A85880 /* PBBAPopupCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */; };
+		CD493C5F1D2418C700FC3E5A /* PBBAAutoLoadableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */; };
+		CD493C601D2418C700FC3E5A /* PBBAAutoLoadableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD493C5E1D2418C700FC3E5A /* PBBAAutoLoadableView.m */; };
+		CD4F89A41C981EEC009DE460 /* PBBAAppearanceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4F89A21C981EEC009DE460 /* PBBAAppearanceProxy.h */; };
+		CD4F89A51C981EEC009DE460 /* PBBAAppearanceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4F89A31C981EEC009DE460 /* PBBAAppearanceProxy.m */; };
+		CD63787D1D2FF6AF0073D14F /* PBBAAppUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD63787C1D2FF6AF0073D14F /* PBBAAppUtilsTests.m */; };
+		CD71EE111D23E42C007135B8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD71EE101D23E42C007135B8 /* Media.xcassets */; };
+		CD7444F51D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */; };
+		CD7444F61D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7444F41D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.m */; };
+		CD7461F31D23FCE1007EB6D3 /* PBBAAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7461F21D23FCE1007EB6D3 /* PBBAAppearance.h */; };
+		CD8501501D2426CE00C06582 /* PBBAErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD85014D1D2426B900C06582 /* PBBAErrorView.xib */; };
+		CD8CCE4E1C88409000F27CC2 /* PBBAPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE4C1C88409000F27CC2 /* PBBAPopupViewController.h */; };
+		CD8CCE4F1C88409000F27CC2 /* PBBAPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CCE4D1C88409000F27CC2 /* PBBAPopupViewController.m */; };
+		CD8CCE611C8847BB00F27CC2 /* UIView+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */; };
+		CD8CCE621C8847BB00F27CC2 /* UIView+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CCE601C8847BB00F27CC2 /* UIView+ZPMLib.m */; };
+		CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */; };
+		CD8CCE841C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CCE821C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m */; };
+		CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F889F1BB5A12000E754B6 /* NSAttributedString+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */; };
+		CD8F88A01BB5A12000E754B6 /* NSBundle+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */; };
+		CD8F88A21BB5A12000E754B6 /* UIColor+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */; };
+		CD8F88A41BB5A12000E754B6 /* UIFont+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */; };
+		CD8F88A51BB5A12000E754B6 /* UIImage+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */; };
+		CD8F88B11BB5A12000E754B6 /* PBBACodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = C818C1D81B5653CC00A7514A /* PBBACodeView.h */; };
+		CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC4374518D306E8004DBB05 /* PBBAButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; };
+		CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
+		CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */; };
+		CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
+		CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */; };
+		CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9C6FF21D21767200D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
+		CDB9274E1B57AC6700A8EDFD /* PBBASquiggleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB9274D1B57AC6700A8EDFD /* PBBASquiggleView.m */; };
+		CDBC35131D2424BB00B5A235 /* PBBAPopupContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */; };
+		CDBC35141D2424BB00B5A235 /* PBBAPopupContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC35121D2424BB00B5A235 /* PBBAPopupContainerController.m */; };
+		CDBF18CD1CFF13110002883C /* libZappMerchantLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A76635CC188D3AB300D6C26C /* libZappMerchantLib.a */; };
+		CDC4374018D305F5004DBB05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDC4373E18D305F5004DBB05 /* InfoPlist.strings */; };
+		CDD2D5891C999265005B097A /* PBBAAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD2D5871C999265005B097A /* PBBAAppearance.m */; };
+		CDD988FD199A342E008A082A /* UIFont+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD988FC199A342E008A082A /* UIFont+ZPMLib.m */; };
+		CDD98900199A4A90008A082A /* NSAttributedString+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD988FF199A4A90008A082A /* NSAttributedString+ZPMLib.m */; };
+		CDD98902199A5018008A082A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD98901199A5018008A082A /* CoreText.framework */; };
+		CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */; };
+		CDF165A31D2423AD00E70873 /* PBBACodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD413E071D241BD700474397 /* PBBACodeView.xib */; };
+		F14E72FE199A546100818A7C /* UIColor+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E72FD199A546100818A7C /* UIColor+ZPMLib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		147FED871F878D6C008CFCBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76635C4188D3AB300D6C26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76635CB188D3AB300D6C26C;
+			remoteInfo = ZappMerchantLib;
+		};
+		CD0D6CB518D70FB300C3AF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76635C4188D3AB300D6C26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC4373818D305F5004DBB05;
+			remoteInfo = ZappMerchantLibResources;
+		};
+		CD6CBC581BA70611006899D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76635C4188D3AB300D6C26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6CBC511BA703CE006899D6;
+			remoteInfo = ZappMerchantLibFat;
+		};
+		CD8F88BF1BB5A1FF00E754B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76635C4188D3AB300D6C26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8F887A1BB5A0A400E754B6;
+			remoteInfo = ZappMerchantLibExport;
+		};
+		CDBF18C91CFF0D930002883C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76635C4188D3AB300D6C26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76635CB188D3AB300D6C26C;
+			remoteInfo = ZappMerchantLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBACustomUXConfig.h; sourceTree = "<group>"; };
+		043C9DA3215946F7002E9162 /* PBBACustomUXConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBACustomUXConfig.m; sourceTree = "<group>"; };
+		04C376BE216D10B100E5755A /* PBBAPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PBBAPopup.storyboard; sourceTree = "<group>"; };
+		14C10B511F87CA9900702936 /* PBBATypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBATypes.h; sourceTree = "<group>"; };
+		14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAInvocationURLBuilder.h; sourceTree = "<group>"; };
+		14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilder.m; sourceTree = "<group>"; };
+		14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilderTests.m; sourceTree = "<group>"; };
+		5AF003B01B8DEB9B007C7980 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69880497BC0F436956D58E21 /* Pods-ZappMerchantLibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7743DFBF8A632ACF2F874AF4 /* Pods-ZappMerchantLibTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.development.xcconfig"; sourceTree = "<group>"; };
+		8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkOffcForMC.ttf; sourceTree = "<group>"; };
+		8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Bold.ttf"; sourceTree = "<group>"; };
+		8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Heavy.ttf"; sourceTree = "<group>"; };
+		8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Medium.ttf"; sourceTree = "<group>"; };
+		8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupContentViewController.m; sourceTree = "<group>"; };
+		8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupContentViewController.h; sourceTree = "<group>"; };
+		8A3AB266218B32ED005FF72A /* PBBAErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAErrorView.h; sourceTree = "<group>"; };
+		8A3AB267218B32ED005FF72A /* PBBAErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAErrorView.m; sourceTree = "<group>"; };
+		8A3AB26A218B49F0005FF72A /* NSError+ZPMLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+ZPMLib.h"; sourceTree = "<group>"; };
+		8A3AB26B218B49F0005FF72A /* NSError+ZPMLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+ZPMLib.m"; sourceTree = "<group>"; };
+		8A8D89CB216DCEAD005B580E /* PBBAButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBAButton.xib; sourceTree = "<group>"; };
+		8A8D89CC216DCEAD005B580E /* PBBAButtonMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAButtonMain.m; sourceTree = "<group>"; };
+		8A8D89CD216DCEAE005B580E /* PBBAButtonMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAButtonMain.h; sourceTree = "<group>"; };
+		8A8D89CE216DCEAE005B580E /* PBBAButtonMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBAButtonMain.xib; sourceTree = "<group>"; };
+		8A8D89D4216DD3C6005B580E /* PBBABankLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBABankLogo.h; sourceTree = "<group>"; };
+		8A8D89D5216DD3C6005B580E /* PBBABankLogosService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBABankLogosService.m; sourceTree = "<group>"; };
+		8A8D89D6216DD3C6005B580E /* PBBANetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBANetworkService.m; sourceTree = "<group>"; };
+		8A8D89D7216DD3C6005B580E /* PBBANetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBANetworkService.h; sourceTree = "<group>"; };
+		8A8D89D8216DD3C7005B580E /* PBBABankLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBABankLogo.m; sourceTree = "<group>"; };
+		8A8D89D9216DD3C7005B580E /* PBBABankLogosService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBABankLogosService.h; sourceTree = "<group>"; };
+		8AA8512D2149276000B4556F /* PBBABankLogosContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBABankLogosContainer.m; sourceTree = "<group>"; };
+		8AA8512E2149276000B4556F /* PBBABankLogosContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBABankLogosContainer.xib; sourceTree = "<group>"; };
+		8AA8512F2149276000B4556F /* PBBABankLogosContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBABankLogosContainer.h; sourceTree = "<group>"; };
+		8AA851302149276000B4556F /* PBBAMoreAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAMoreAboutViewController.h; sourceTree = "<group>"; };
+		8AA851322149276100B4556F /* PBBABankLogosLayouts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBABankLogosLayouts.xib; sourceTree = "<group>"; };
+		8AA851332149276100B4556F /* PBBAMoreAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAMoreAboutViewController.m; sourceTree = "<group>"; };
+		8AC78D6F21763DAB00405FF3 /* PBBAExpiryTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAExpiryTimer.h; sourceTree = "<group>"; };
+		8AC78D7021763DAB00405FF3 /* PBBAExpiryTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAExpiryTimer.m; sourceTree = "<group>"; };
+		8AD714CE219D660C0083C296 /* PBBABankLogosCommonLayout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PBBABankLogosCommonLayout.xib; sourceTree = "<group>"; };
+		8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZappMerchantLibTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A114EA0819D5E7EE000EF7CE /* ZappMerchantLib.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZappMerchantLib.podspec; sourceTree = "<group>"; };
+		A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZPMLib.h"; sourceTree = "<group>"; };
+		A2D12A8419640BE30064590B /* UIImage+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZPMLib.m"; sourceTree = "<group>"; };
+		A2FC5E0F21AC1D1A000625F6 /* PBBACustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACustomButton.m; sourceTree = "<group>"; };
+		A2FC5E1121AC1D1A000625F6 /* PBBACustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBACustomButton.xib; sourceTree = "<group>"; };
+		A2FC5E1221AC1D1A000625F6 /* PBBACustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBACustomButton.h; sourceTree = "<group>"; };
+		A2FC5E1B21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBACustomButtonBankLogosContainer.xib; sourceTree = "<group>"; };
+		A2FC5E2A21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBACustomButtonBankLogosLayouts.xib; sourceTree = "<group>"; };
+		A2FC5E2C21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACustomButtonBankLogosContainer.m; sourceTree = "<group>"; };
+		A2FC5E2D21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBACustomButtonBankLogosContainer.h; sourceTree = "<group>"; };
+		A76635CC188D3AB300D6C26C /* libZappMerchantLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZappMerchantLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76635CF188D3AB300D6C26C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZappMerchantLib.h; sourceTree = "<group>"; };
+		A76635DC188D3AB300D6C26C /* ZappMerchantLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappMerchantLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76635E7188D3AB300D6C26C /* ZappMerchantLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZappMerchantLibTests-Info.plist"; sourceTree = "<group>"; };
+		A76635E9188D3AB300D6C26C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF208AE5E2E714F833B94520 /* Pods-ZappMerchantLibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.release.xcconfig"; sourceTree = "<group>"; };
+		C818C1D81B5653CC00A7514A /* PBBACodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBACodeView.h; sourceTree = "<group>"; };
+		C818C1D91B5653CC00A7514A /* PBBACodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACodeView.m; sourceTree = "<group>"; };
+		C88DA6D31B70C5E600EAFC81 /* PBBAPopupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupButton.m; sourceTree = "<group>"; };
+		CD2176191D24273000DA032D /* PBBAMComViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAMComViewController.h; sourceTree = "<group>"; };
+		CD21761A1D24273000DA032D /* PBBAMComViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAMComViewController.m; sourceTree = "<group>"; };
+		CD3A0B3B18D75C4C002994E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ZPMLib.h"; sourceTree = "<group>"; };
+		CD3A0B3F18D7659B002994E4 /* NSBundle+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ZPMLib.m"; sourceTree = "<group>"; };
+		CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupCoordinator.h; sourceTree = "<group>"; };
+		CD3BBEA01C90607D0096B732 /* PBBAPopupCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupCoordinator.m; sourceTree = "<group>"; };
+		CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupAnimator.h; sourceTree = "<group>"; };
+		CD3F2B9D1D23FA27008A5D0D /* PBBAPopupAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupAnimator.m; sourceTree = "<group>"; };
+		CD413E071D241BD700474397 /* PBBACodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBACodeView.xib; sourceTree = "<group>"; };
+		CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAAnimatable.h; sourceTree = "<group>"; };
+		CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAutoLoadableView.h; sourceTree = "<group>"; };
+		CD493C5E1D2418C700FC3E5A /* PBBAAutoLoadableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAutoLoadableView.m; sourceTree = "<group>"; };
+		CD4F89A21C981EEC009DE460 /* PBBAAppearanceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppearanceProxy.h; sourceTree = "<group>"; };
+		CD4F89A31C981EEC009DE460 /* PBBAAppearanceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppearanceProxy.m; sourceTree = "<group>"; };
+		CD63787C1D2FF6AF0073D14F /* PBBAAppUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppUtilsTests.m; sourceTree = "<group>"; };
+		CD71EE101D23E42C007135B8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupScaleAspectFitAnimationContext.h; sourceTree = "<group>"; };
+		CD7444F41D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupScaleAspectFitAnimationContext.m; sourceTree = "<group>"; };
+		CD7461F21D23FCE1007EB6D3 /* PBBAAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppearance.h; sourceTree = "<group>"; };
+		CD85014D1D2426B900C06582 /* PBBAErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBAErrorView.xib; sourceTree = "<group>"; };
+		CD8CCE4C1C88409000F27CC2 /* PBBAPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupViewController.h; sourceTree = "<group>"; };
+		CD8CCE4D1C88409000F27CC2 /* PBBAPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupViewController.m; sourceTree = "<group>"; };
+		CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZPMLib.h"; sourceTree = "<group>"; };
+		CD8CCE601C8847BB00F27CC2 /* UIView+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZPMLib.m"; sourceTree = "<group>"; };
+		CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupContentViewControllerTransitionContext.h; sourceTree = "<group>"; };
+		CD8CCE821C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupContentViewControllerTransitionContext.m; sourceTree = "<group>"; };
+		CD8F887B1BB5A0A400E754B6 /* libZappMerchantLibExportHeaders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZappMerchantLibExportHeaders.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppUtils.h; sourceTree = "<group>"; };
+		CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppUtils.m; sourceTree = "<group>"; };
+		CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBALibraryUtils.h; sourceTree = "<group>"; };
+		CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBALibraryUtils.m; sourceTree = "<group>"; };
+		CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBASquiggleView.h; sourceTree = "<group>"; };
+		CDB9274D1B57AC6700A8EDFD /* PBBASquiggleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBASquiggleView.m; sourceTree = "<group>"; };
+		CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupContainerController.h; sourceTree = "<group>"; };
+		CDBC35121D2424BB00B5A235 /* PBBAPopupContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupContainerController.m; sourceTree = "<group>"; };
+		CDC4373918D305F5004DBB05 /* ZappMerchantLibResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappMerchantLibResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC4373D18D305F5004DBB05 /* ZappMerchantLibResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZappMerchantLibResources-Info.plist"; sourceTree = "<group>"; };
+		CDC4373F18D305F5004DBB05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDC4374518D306E8004DBB05 /* PBBAButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAButton.h; sourceTree = "<group>"; };
+		CDC4374618D306E8004DBB05 /* PBBAButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAButton.m; sourceTree = "<group>"; };
+		CDCA596C1D35410E002308C9 /* PBBATestEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBATestEnvironment.h; sourceTree = "<group>"; };
+		CDD2D5871C999265005B097A /* PBBAAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppearance.m; sourceTree = "<group>"; };
+		CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ZPMLib.h"; sourceTree = "<group>"; };
+		CDD988FC199A342E008A082A /* UIFont+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ZPMLib.m"; sourceTree = "<group>"; };
+		CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+ZPMLib.h"; sourceTree = "<group>"; };
+		CDD988FF199A4A90008A082A /* NSAttributedString+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+ZPMLib.m"; sourceTree = "<group>"; };
+		CDD98901199A5018008A082A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAUIElementAppearance.h; sourceTree = "<group>"; };
+		CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupButton.h; sourceTree = "<group>"; };
+		F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZPMLib.h"; sourceTree = "<group>"; };
+		F14E72FD199A546100818A7C /* UIColor+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZPMLib.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42C01E502CA3C8798FC960FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76635C9188D3AB300D6C26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD98902199A5018008A082A /* CoreText.framework in Frameworks */,
+				CD3A0B3C18D75C4C002994E4 /* UIKit.framework in Frameworks */,
+				A76635D0188D3AB300D6C26C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76635D9188D3AB300D6C26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBF18CD1CFF13110002883C /* libZappMerchantLib.a in Frameworks */,
+				A76635DF188D3AB300D6C26C /* Foundation.framework in Frameworks */,
+				744148916F89CDBD1AEF0D3D /* libPods-ZappMerchantLibTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC4373618D305F5004DBB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049711C921A6CABC00E10781 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				A2FC5E1221AC1D1A000625F6 /* PBBACustomButton.h */,
+				A2FC5E0F21AC1D1A000625F6 /* PBBACustomButton.m */,
+				A2FC5E1121AC1D1A000625F6 /* PBBACustomButton.xib */,
+				A2FC5E2D21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h */,
+				A2FC5E2C21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m */,
+				A2FC5E1B21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib */,
+				A2FC5E2A21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib */,
+			);
+			name = CustomButton;
+			sourceTree = "<group>";
+		};
+		61DF66CE63B7A108B224F0A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69880497BC0F436956D58E21 /* Pods-ZappMerchantLibTests.debug.xcconfig */,
+				BF208AE5E2E714F833B94520 /* Pods-ZappMerchantLibTests.release.xcconfig */,
+				7743DFBF8A632ACF2F874AF4 /* Pods-ZappMerchantLibTests.development.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A8D89D3216DCF30005B580E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A8D89E0216DD419005B580E /* Models */,
+				8A8D89D9216DD3C7005B580E /* PBBABankLogosService.h */,
+				8A8D89D5216DD3C6005B580E /* PBBABankLogosService.m */,
+				8A8D89D7216DD3C6005B580E /* PBBANetworkService.h */,
+				8A8D89D6216DD3C6005B580E /* PBBANetworkService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8A8D89E0216DD419005B580E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A8D89D4216DD3C6005B580E /* PBBABankLogo.h */,
+				8A8D89D8216DD3C7005B580E /* PBBABankLogo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8AA8512C2149274400B4556F /* Bank logos */ = {
+			isa = PBXGroup;
+			children = (
+				8AA8512F2149276000B4556F /* PBBABankLogosContainer.h */,
+				8AA8512D2149276000B4556F /* PBBABankLogosContainer.m */,
+				8AA8512E2149276000B4556F /* PBBABankLogosContainer.xib */,
+				8AA851322149276100B4556F /* PBBABankLogosLayouts.xib */,
+				8AD714CE219D660C0083C296 /* PBBABankLogosCommonLayout.xib */,
+			);
+			name = "Bank logos";
+			sourceTree = "<group>";
+		};
+		A2A01A4E196ED99A00EBBD68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0238C11C8F096D00E06B00 /* Localisation */,
+				CDBA1D071999036D000D4EF8 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A76635C3188D3AB300D6C26C = {
+			isa = PBXGroup;
+			children = (
+				A114EA0819D5E7EE000EF7CE /* ZappMerchantLib.podspec */,
+				A76635D1188D3AB300D6C26C /* ZappMerchantLib */,
+				A76635E5188D3AB300D6C26C /* ZappMerchantLibTests */,
+				CDC4373B18D305F5004DBB05 /* ZappMerchantLibResources */,
+				A76635CE188D3AB300D6C26C /* Frameworks */,
+				A76635CD188D3AB300D6C26C /* Products */,
+				61DF66CE63B7A108B224F0A8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A76635CD188D3AB300D6C26C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76635CC188D3AB300D6C26C /* libZappMerchantLib.a */,
+				A76635DC188D3AB300D6C26C /* ZappMerchantLibTests.xctest */,
+				CDC4373918D305F5004DBB05 /* ZappMerchantLibResources.bundle */,
+				CD8F887B1BB5A0A400E754B6 /* libZappMerchantLibExportHeaders.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76635CE188D3AB300D6C26C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD98901199A5018008A082A /* CoreText.framework */,
+				CD3A0B3B18D75C4C002994E4 /* UIKit.framework */,
+				A76635CF188D3AB300D6C26C /* Foundation.framework */,
+				8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76635D1188D3AB300D6C26C /* ZappMerchantLib */ = {
+			isa = PBXGroup;
+			children = (
+				8A8D89D3216DCF30005B580E /* Services */,
+				CD15056418D212B10029BE56 /* Utils */,
+				CD12FE011C8EED7A008EC2FA /* Protocols */,
+				CD8CCE5E1C88478800F27CC2 /* Categories */,
+				CD8CCE441C883F9300F27CC2 /* UI Elements */,
+				A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */,
+			);
+			path = ZappMerchantLib;
+			sourceTree = "<group>";
+		};
+		A76635E5188D3AB300D6C26C /* ZappMerchantLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCA596D1D354114002308C9 /* Utils */,
+				CD63787B1D2FF68B0073D14F /* Tests */,
+				A76635E6188D3AB300D6C26C /* Supporting Files */,
+			);
+			path = ZappMerchantLibTests;
+			sourceTree = "<group>";
+		};
+		A76635E6188D3AB300D6C26C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A76635E7188D3AB300D6C26C /* ZappMerchantLibTests-Info.plist */,
+				A76635E8188D3AB300D6C26C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD0238C11C8F096D00E06B00 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				5AF003B01B8DEB9B007C7980 /* Localizable.strings */,
+			);
+			name = Localisation;
+			sourceTree = "<group>";
+		};
+		CD12FE011C8EED7A008EC2FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */,
+				CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		CD15056418D212B10029BE56 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14C10B511F87CA9900702936 /* PBBATypes.h */,
+				CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */,
+				CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */,
+				CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */,
+				CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */,
+				8AC78D6F21763DAB00405FF3 /* PBBAExpiryTimer.h */,
+				8AC78D7021763DAB00405FF3 /* PBBAExpiryTimer.m */,
+				14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */,
+				14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		CD426BA01C8F23DE001A2843 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD426BA41C8F23F0001A2843 /* Container Controllers */,
+				CD660DC61C8A0140000D550B /* Content View Controllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CD426BA41C8F23F0001A2843 /* Container Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD8CCE4C1C88409000F27CC2 /* PBBAPopupViewController.h */,
+				CD8CCE4D1C88409000F27CC2 /* PBBAPopupViewController.m */,
+				CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */,
+				CDBC35121D2424BB00B5A235 /* PBBAPopupContainerController.m */,
+				CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */,
+				CD3BBEA01C90607D0096B732 /* PBBAPopupCoordinator.m */,
+				8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */,
+				8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */,
+			);
+			name = "Container Controllers";
+			sourceTree = "<group>";
+		};
+		CD63787B1D2FF68B0073D14F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD63787C1D2FF6AF0073D14F /* PBBAAppUtilsTests.m */,
+				14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		CD660DC21C89DB69000D550B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */,
+				CD3F2B9D1D23FA27008A5D0D /* PBBAPopupAnimator.m */,
+				CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */,
+				CD7444F41D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.m */,
+				CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */,
+				CD8CCE821C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		CD660DC61C8A0140000D550B /* Content View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD2176191D24273000DA032D /* PBBAMComViewController.h */,
+				CD21761A1D24273000DA032D /* PBBAMComViewController.m */,
+			);
+			name = "Content View Controllers";
+			sourceTree = "<group>";
+		};
+		CD660DD71C8D8D83000D550B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				049711C921A6CABC00E10781 /* CustomButton */,
+				CD776AFB1C90202E00F0D28E /* Button */,
+				CD776AF71C90201900F0D28E /* Popup */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CD776AF71C90201900F0D28E /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				8AA8512C2149274400B4556F /* Bank logos */,
+				CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */,
+				CD493C5E1D2418C700FC3E5A /* PBBAAutoLoadableView.m */,
+				C818C1D81B5653CC00A7514A /* PBBACodeView.h */,
+				C818C1D91B5653CC00A7514A /* PBBACodeView.m */,
+				CD413E071D241BD700474397 /* PBBACodeView.xib */,
+				CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */,
+				C88DA6D31B70C5E600EAFC81 /* PBBAPopupButton.m */,
+				8A3AB266218B32ED005FF72A /* PBBAErrorView.h */,
+				8A3AB267218B32ED005FF72A /* PBBAErrorView.m */,
+				CD85014D1D2426B900C06582 /* PBBAErrorView.xib */,
+				8AA851302149276000B4556F /* PBBAMoreAboutViewController.h */,
+				8AA851332149276100B4556F /* PBBAMoreAboutViewController.m */,
+				04C376BE216D10B100E5755A /* PBBAPopup.storyboard */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		CD776AFB1C90202E00F0D28E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				CDC4374518D306E8004DBB05 /* PBBAButton.h */,
+				CDC4374618D306E8004DBB05 /* PBBAButton.m */,
+				CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */,
+				CDB9274D1B57AC6700A8EDFD /* PBBASquiggleView.m */,
+				8A8D89CB216DCEAD005B580E /* PBBAButton.xib */,
+				8A8D89CD216DCEAE005B580E /* PBBAButtonMain.h */,
+				8A8D89CC216DCEAD005B580E /* PBBAButtonMain.m */,
+				8A8D89CE216DCEAE005B580E /* PBBAButtonMain.xib */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		CD8CCE441C883F9300F27CC2 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				CD660DC21C89DB69000D550B /* Animation */,
+				CDE129431C8F357E00DB555F /* Models */,
+				CD660DD71C8D8D83000D550B /* Views */,
+				CD426BA01C8F23DE001A2843 /* Controllers */,
+			);
+			name = "UI Elements";
+			sourceTree = "<group>";
+		};
+		CD8CCE5E1C88478800F27CC2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */,
+				CDD988FC199A342E008A082A /* UIFont+ZPMLib.m */,
+				CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */,
+				CD8CCE601C8847BB00F27CC2 /* UIView+ZPMLib.m */,
+				CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */,
+				CD3A0B3F18D7659B002994E4 /* NSBundle+ZPMLib.m */,
+				F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */,
+				F14E72FD199A546100818A7C /* UIColor+ZPMLib.m */,
+				A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */,
+				A2D12A8419640BE30064590B /* UIImage+ZPMLib.m */,
+				CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */,
+				CDD988FF199A4A90008A082A /* NSAttributedString+ZPMLib.m */,
+				8A3AB26A218B49F0005FF72A /* NSError+ZPMLib.h */,
+				8A3AB26B218B49F0005FF72A /* NSError+ZPMLib.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CDBA1D071999036D000D4EF8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */,
+				8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */,
+				8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */,
+				8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		CDC4373B18D305F5004DBB05 /* ZappMerchantLibResources */ = {
+			isa = PBXGroup;
+			children = (
+				A2A01A4E196ED99A00EBBD68 /* Resources */,
+				CD71EE101D23E42C007135B8 /* Media.xcassets */,
+				CDC4373C18D305F5004DBB05 /* Supporting Files */,
+			);
+			path = ZappMerchantLibResources;
+			sourceTree = "<group>";
+		};
+		CDC4373C18D305F5004DBB05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC4373D18D305F5004DBB05 /* ZappMerchantLibResources-Info.plist */,
+				CDC4373E18D305F5004DBB05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCA596D1D354114002308C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDCA596C1D35410E002308C9 /* PBBATestEnvironment.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		CDE129431C8F357E00DB555F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD4F89A21C981EEC009DE460 /* PBBAAppearanceProxy.h */,
+				CD4F89A31C981EEC009DE460 /* PBBAAppearanceProxy.m */,
+				CD7461F21D23FCE1007EB6D3 /* PBBAAppearance.h */,
+				CDD2D5871C999265005B097A /* PBBAAppearance.m */,
+				043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */,
+				043C9DA3215946F7002E9162 /* PBBACustomUXConfig.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C81AB9081B6A770D00B621A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */,
+				CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */,
+				043C9DA4215946F7002E9162 /* PBBACustomUXConfig.h in Headers */,
+				8A8D89DD216DD3C7005B580E /* PBBANetworkService.h in Headers */,
+				CD493C5F1D2418C700FC3E5A /* PBBAAutoLoadableView.h in Headers */,
+				A2FC5E1421AC1D1A000625F6 /* PBBACustomButton.h in Headers */,
+				8AC78D7121763DAB00405FF3 /* PBBAExpiryTimer.h in Headers */,
+				C81AB9281B6A799600B621A2 /* ZappMerchantLib.h in Headers */,
+				A2FC5E2F21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h in Headers */,
+				CD7461F31D23FCE1007EB6D3 /* PBBAAppearance.h in Headers */,
+				8AA851352149276100B4556F /* PBBABankLogosContainer.h in Headers */,
+				8A8D89D0216DCEAE005B580E /* PBBAButtonMain.h in Headers */,
+				8AA851362149276100B4556F /* PBBAMoreAboutViewController.h in Headers */,
+				14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */,
+				CD7444F51D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
+				CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */,
+				C81AB95B1B6A81D500B621A2 /* PBBAUIElementAppearance.h in Headers */,
+				CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */,
+				C81AB95D1B6A81D500B621A2 /* PBBACodeView.h in Headers */,
+				8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */,
+				CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
+				C81AB9621B6A81D500B621A2 /* PBBAButton.h in Headers */,
+				C81AB9631B6A81D500B621A2 /* PBBASquiggleView.h in Headers */,
+				CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */,
+				CDBC35131D2424BB00B5A235 /* PBBAPopupContainerController.h in Headers */,
+				8A8D89DA216DD3C7005B580E /* PBBABankLogo.h in Headers */,
+				8A8D89DF216DD3C7005B580E /* PBBABankLogosService.h in Headers */,
+				CD4F89A41C981EEC009DE460 /* PBBAAppearanceProxy.h in Headers */,
+				CD3BBEA11C90607D0096B732 /* PBBAPopupCoordinator.h in Headers */,
+				CD8CCE4E1C88409000F27CC2 /* PBBAPopupViewController.h in Headers */,
+				8A3AB261218B259D005FF72A /* PBBAPopupContentViewController.h in Headers */,
+				CD8CCE611C8847BB00F27CC2 /* UIView+ZPMLib.h in Headers */,
+				C81AB93A1B6A7E9200B621A2 /* NSAttributedString+ZPMLib.h in Headers */,
+				C81AB93B1B6A7E9200B621A2 /* NSBundle+ZPMLib.h in Headers */,
+				C81AB93D1B6A7E9300B621A2 /* UIColor+ZPMLib.h in Headers */,
+				C81AB9401B6A7E9300B621A2 /* UIImage+ZPMLib.h in Headers */,
+				8A3AB26C218B49F0005FF72A /* NSError+ZPMLib.h in Headers */,
+				CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */,
+				CD21761C1D24273000DA032D /* PBBAMComViewController.h in Headers */,
+				C81AB93F1B6A7E9300B621A2 /* UIFont+ZPMLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8F88941BB5A0F300E754B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */,
+				CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */,
+				CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */,
+				CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */,
+				CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */,
+				14C10B561F87DEE600702936 /* PBBATypes.h in Headers */,
+				CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */,
+				14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */,
+				CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */,
+				CD3E3CE61D25375600EB58EB /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
+				CD3E3CE81D25375600EB58EB /* PBBAAppearance.h in Headers */,
+				CD3E3CE91D25375600EB58EB /* PBBAAutoLoadableView.h in Headers */,
+				CD3E3CED1D25375600EB58EB /* PBBAPopupButton.h in Headers */,
+				CD3E3CEE1D25375600EB58EB /* PBBAPopupContainerController.h in Headers */,
+				CD3E3CF11D25375600EB58EB /* PBBAMComViewController.h in Headers */,
+				CD9C6FF21D21767200D207EF /* PBBALibraryUtils.h in Headers */,
+				CD43B7161CFDCEA400A85880 /* UIView+ZPMLib.h in Headers */,
+				CD43B7191CFDCEA400A85880 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
+				CD43B71A1CFDCEA400A85880 /* PBBAAppearanceProxy.h in Headers */,
+				CD43B7211CFDCEA400A85880 /* PBBAPopupCoordinator.h in Headers */,
+				CD8F889F1BB5A12000E754B6 /* NSAttributedString+ZPMLib.h in Headers */,
+				CD8F88A01BB5A12000E754B6 /* NSBundle+ZPMLib.h in Headers */,
+				CD8F88B11BB5A12000E754B6 /* PBBACodeView.h in Headers */,
+				CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */,
+				CD8F88A21BB5A12000E754B6 /* UIColor+ZPMLib.h in Headers */,
+				CD8F88A41BB5A12000E754B6 /* UIFont+ZPMLib.h in Headers */,
+				CD8F88A51BB5A12000E754B6 /* UIImage+ZPMLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A76635CB188D3AB300D6C26C /* ZappMerchantLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76635EF188D3AB300D6C26C /* Build configuration list for PBXNativeTarget "ZappMerchantLib" */;
+			buildPhases = (
+				A76635C8188D3AB300D6C26C /* Sources */,
+				A76635C9188D3AB300D6C26C /* Frameworks */,
+				C81AB9081B6A770D00B621A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0D6CB618D70FB300C3AF14 /* PBXTargetDependency */,
+			);
+			name = ZappMerchantLib;
+			productName = ZappMerchantLib;
+			productReference = A76635CC188D3AB300D6C26C /* libZappMerchantLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A76635DB188D3AB300D6C26C /* ZappMerchantLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76635F2188D3AB300D6C26C /* Build configuration list for PBXNativeTarget "ZappMerchantLibTests" */;
+			buildPhases = (
+				D4DF263E76CF19205ACCDAFC /* [CP] Check Pods Manifest.lock */,
+				A76635D8188D3AB300D6C26C /* Sources */,
+				A76635D9188D3AB300D6C26C /* Frameworks */,
+				A76635DA188D3AB300D6C26C /* Resources */,
+				BC80D90D514F1DCE7C18E5AE /* [CP] Embed Pods Frameworks */,
+				A93A2F21FF59529F737C7C6B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBF18CA1CFF0D930002883C /* PBXTargetDependency */,
+			);
+			name = ZappMerchantLibTests;
+			productName = ZappMerchantLibTests;
+			productReference = A76635DC188D3AB300D6C26C /* ZappMerchantLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD8F887A1BB5A0A400E754B6 /* ZappMerchantLibExportHeaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8F888C1BB5A0A400E754B6 /* Build configuration list for PBXNativeTarget "ZappMerchantLibExportHeaders" */;
+			buildPhases = (
+				CD8F88941BB5A0F300E754B6 /* Headers */,
+				42C01E502CA3C8798FC960FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147FED881F878D6C008CFCBA /* PBXTargetDependency */,
+			);
+			name = ZappMerchantLibExportHeaders;
+			productName = ZappMerchantLibExport;
+			productReference = CD8F887B1BB5A0A400E754B6 /* libZappMerchantLibExportHeaders.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CDC4373818D305F5004DBB05 /* ZappMerchantLibResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC4374218D305F5004DBB05 /* Build configuration list for PBXNativeTarget "ZappMerchantLibResources" */;
+			buildPhases = (
+				CDC4373518D305F5004DBB05 /* Sources */,
+				CDC4373618D305F5004DBB05 /* Frameworks */,
+				CDC4373718D305F5004DBB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZappMerchantLibResources;
+			productName = ZappMerchantLibResources;
+			productReference = CDC4373918D305F5004DBB05 /* ZappMerchantLibResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76635C4188D3AB300D6C26C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PBBA;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Vocalink;
+				TargetAttributes = {
+					CD6CBC511BA703CE006899D6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CD8F887A1BB5A0A400E754B6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = A76635C7188D3AB300D6C26C /* Build configuration list for PBXProject "ZappMerchantLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = A76635C3188D3AB300D6C26C;
+			productRefGroup = A76635CD188D3AB300D6C26C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76635CB188D3AB300D6C26C /* ZappMerchantLib */,
+				CD8F887A1BB5A0A400E754B6 /* ZappMerchantLibExportHeaders */,
+				CD6CBC511BA703CE006899D6 /* ZappMerchantLibFat */,
+				A2DD809C18EEE76300288F11 /* ZappMerchantSDK */,
+				A76635DB188D3AB300D6C26C /* ZappMerchantLibTests */,
+				CDC4373818D305F5004DBB05 /* ZappMerchantLibResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76635DA188D3AB300D6C26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76635EA188D3AB300D6C26C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC4373718D305F5004DBB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */,
+				A2FC5E1521AC1D36000625F6 /* PBBACustomButton.xib in Resources */,
+				CD8501501D2426CE00C06582 /* PBBAErrorView.xib in Resources */,
+				CDF165A31D2423AD00E70873 /* PBBACodeView.xib in Resources */,
+				8A34BB14219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf in Resources */,
+				5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */,
+				8A8D89D1216DCEB9005B580E /* PBBAButton.xib in Resources */,
+				A2FC5E2B21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib in Resources */,
+				8A34BB12219ED1DE00AF8787 /* MarkOffcForMC.ttf in Resources */,
+				CDC4374018D305F5004DBB05 /* InfoPlist.strings in Resources */,
+				8A34BB15219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf in Resources */,
+				A2FC5E1C21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib in Resources */,
+				CD71EE111D23E42C007135B8 /* Media.xcassets in Resources */,
+				8A34BB13219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf in Resources */,
+				8AA851462149281D00B4556F /* PBBABankLogosLayouts.xib in Resources */,
+				8AD714CF219D660C0083C296 /* PBBABankLogosCommonLayout.xib in Resources */,
+				8AA851472149282000B4556F /* PBBABankLogosContainer.xib in Resources */,
+				8A8D89D2216DCEB9005B580E /* PBBAButtonMain.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A93A2F21FF59529F737C7C6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC80D90D514F1DCE7C18E5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD06BC481B6BB8BC00BA886C /* Build Framework & Export Products */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework & Export Products";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nFRAMEWORK_NAME=${PROJECT_NAME}\n\nINPUT_STATIC_LIB_LOCATION=\"${BUILT_PRODUCTS_DIR}/lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nOTHER_FRAMEWORK_LOCATION=\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nBRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | tr / -)\nOUTPUT_DIR=\"${HOME}/Desktop/${FRAMEWORK_NAME}-${BRANCH_NAME}\"\n\n# Create the path to the real Headers dir\n/bin/mkdir -p \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCATION}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCATION}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCATION}/${PRODUCT_NAME}\"\n\n# Export framework\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\nditto \"${FRAMEWORK_LOCATION}\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# Export fat lib and headers\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${OUTPUT_DIR}/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${OUTPUT_DIR}/lib${PROJECT_NAME}.a\"\n\n# Export resource bundle\nditto \"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}Resources.bundle\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}Resources.bundle\"";
+		};
+		CD6CBC551BA703D7006899D6 /* Build Fat Lib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Fat Lib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\n    exit 0\nfi\n\nexport MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nINPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nOUT_FAT_STATIC_LIB=\"${INPUT_STATIC_LIB}\"\n\nfunction build_static_library {\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    xcrun libtool -static -o \"${3}\" \"${1}\" \"${2}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\n    SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\n    SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Determine the other platform\nif [ \"$SDK_PLATFORM\" == \"iphoneos\" ]; then\n    OTHER_PLATFORM=iphonesimulator\nelse\n    OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SDK_PLATFORM$ ]]; then\n    OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${OTHER_PLATFORM}\"\nelse\n    echo \"Could not find other platform build directory.\"\n    exit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${OTHER_PLATFORM}${SDK_VERSION}\"\n\n# Ensure that we get both i386 and x86_64 platforms\nif [ \"$SDK_PLATFORM\" == \"iphonesimulator\" ]; then\n    build_static_library \"${SDK_NAME}\"\nfi\n\n# Join the libs for both platforms\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${OTHER_BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${BUILT_PRODUCTS_DIR}/${OUT_FAT_STATIC_LIB}\"";
+		};
+		D4DF263E76CF19205ACCDAFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZappMerchantLibTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76635C8188D3AB300D6C26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3AB260218B259D005FF72A /* PBBAPopupContentViewController.m in Sources */,
+				CD8CCE621C8847BB00F27CC2 /* UIView+ZPMLib.m in Sources */,
+				CDD988FD199A342E008A082A /* UIFont+ZPMLib.m in Sources */,
+				CDBC35141D2424BB00B5A235 /* PBBAPopupContainerController.m in Sources */,
+				8AA851342149276100B4556F /* PBBABankLogosContainer.m in Sources */,
+				A2FC5E1321AC1D1A000625F6 /* PBBACustomButton.m in Sources */,
+				043C9DA5215946F7002E9162 /* PBBACustomUXConfig.m in Sources */,
+				14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */,
+				A2D12A8519640BE30064590B /* UIImage+ZPMLib.m in Sources */,
+				CD4F89A51C981EEC009DE460 /* PBBAAppearanceProxy.m in Sources */,
+				CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */,
+				CD8CCE4F1C88409000F27CC2 /* PBBAPopupViewController.m in Sources */,
+				CD7444F61D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.m in Sources */,
+				CD3F2B9F1D23FA27008A5D0D /* PBBAPopupAnimator.m in Sources */,
+				8A8D89CF216DCEAE005B580E /* PBBAButtonMain.m in Sources */,
+				CDD2D5891C999265005B097A /* PBBAAppearance.m in Sources */,
+				8A8D89DB216DD3C7005B580E /* PBBABankLogosService.m in Sources */,
+				8AA851372149276100B4556F /* PBBAMoreAboutViewController.m in Sources */,
+				C84BD0D01B625E1E00B7B1B1 /* PBBACodeView.m in Sources */,
+				CD493C601D2418C700FC3E5A /* PBBAAutoLoadableView.m in Sources */,
+				CDB9274E1B57AC6700A8EDFD /* PBBASquiggleView.m in Sources */,
+				8A8D89DC216DD3C7005B580E /* PBBANetworkService.m in Sources */,
+				C88B84EA1B62972B00FEB5A7 /* PBBAButton.m in Sources */,
+				C88DA6D51B70C5E600EAFC81 /* PBBAPopupButton.m in Sources */,
+				CD8CCE841C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m in Sources */,
+				CDD98900199A4A90008A082A /* NSAttributedString+ZPMLib.m in Sources */,
+				C81AB9421B6A7EC200B621A2 /* NSBundle+ZPMLib.m in Sources */,
+				CD21761D1D24273000DA032D /* PBBAMComViewController.m in Sources */,
+				A2FC5E2E21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m in Sources */,
+				F14E72FE199A546100818A7C /* UIColor+ZPMLib.m in Sources */,
+				CD3BBEA21C90607D0096B732 /* PBBAPopupCoordinator.m in Sources */,
+				8AC78D7221763DAB00405FF3 /* PBBAExpiryTimer.m in Sources */,
+				CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */,
+				8A8D89DE216DD3C7005B580E /* PBBABankLogo.m in Sources */,
+				8A3AB269218B32ED005FF72A /* PBBAErrorView.m in Sources */,
+				8A3AB26D218B49F0005FF72A /* NSError+ZPMLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76635D8188D3AB300D6C26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */,
+				CD63787D1D2FF6AF0073D14F /* PBBAAppUtilsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC4373518D305F5004DBB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		147FED881F878D6C008CFCBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76635CB188D3AB300D6C26C /* ZappMerchantLib */;
+			targetProxy = 147FED871F878D6C008CFCBA /* PBXContainerItemProxy */;
+		};
+		CD0D6CB618D70FB300C3AF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC4373818D305F5004DBB05 /* ZappMerchantLibResources */;
+			targetProxy = CD0D6CB518D70FB300C3AF14 /* PBXContainerItemProxy */;
+		};
+		CD6CBC591BA70611006899D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6CBC511BA703CE006899D6 /* ZappMerchantLibFat */;
+			targetProxy = CD6CBC581BA70611006899D6 /* PBXContainerItemProxy */;
+		};
+		CD8F88C01BB5A1FF00E754B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8F887A1BB5A0A400E754B6 /* ZappMerchantLibExportHeaders */;
+			targetProxy = CD8F88BF1BB5A1FF00E754B6 /* PBXContainerItemProxy */;
+		};
+		CDBF18CA1CFF0D930002883C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76635CB188D3AB300D6C26C /* ZappMerchantLib */;
+			targetProxy = CDBF18C91CFF0D930002883C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76635E8188D3AB300D6C26C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76635E9188D3AB300D6C26C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDC4373E18D305F5004DBB05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDC4373F18D305F5004DBB05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2DD809D18EEE76300288F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Debug;
+		};
+		A2DD809E18EEE76300288F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Release;
+		};
+		A76635ED188D3AB300D6C26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_CURRENT_VERSION = 4.0.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A76635EE188D3AB300D6C26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_CURRENT_VERSION = 4.0.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76635F0188D3AB300D6C26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CURRENT_PROJECT_VERSION = "";
+				DSTROOT = /tmp/ZappMerchantLib.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		A76635F1188D3AB300D6C26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
+				DSTROOT = /tmp/ZappMerchantLib.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Release;
+		};
+		A76635F3188D3AB300D6C26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69880497BC0F436956D58E21 /* Pods-ZappMerchantLibTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "ZappMerchantLibTests/ZappMerchantLibTests-Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ZappMerchantLib/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A76635F4188D3AB300D6C26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF208AE5E2E714F833B94520 /* Pods-ZappMerchantLibTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "ZappMerchantLibTests/ZappMerchantLibTests-Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ZappMerchantLib/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		CD6CBC531BA703CE006899D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+			};
+			name = Debug;
+		};
+		CD6CBC541BA703CE006899D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+			};
+			name = Release;
+		};
+		CD8F888D1BB5A0A400E754B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD8F888E1BB5A0A400E754B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CDA96C401C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_CURRENT_VERSION = 4.0.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		CDA96C411C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
+				DSTROOT = /tmp/ZappMerchantLib.dst;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Development;
+		};
+		CDA96C421C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Development;
+		};
+		CDA96C431C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+			};
+			name = Development;
+		};
+		CDA96C441C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "armv7s armv7 arm64";
+			};
+			name = Development;
+		};
+		CDA96C451C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7743DFBF8A632ACF2F874AF4 /* Pods-ZappMerchantLibTests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "ZappMerchantLibTests/ZappMerchantLibTests-Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ZappMerchantLib/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Development;
+		};
+		CDA96C461C4E95C5002C64E0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Development;
+		};
+		CDC4374318D305F5004DBB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CDC4374418D305F5004DBB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2DD809F18EEE76300288F11 /* Build configuration list for PBXAggregateTarget "ZappMerchantSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2DD809D18EEE76300288F11 /* Debug */,
+				A2DD809E18EEE76300288F11 /* Release */,
+				CDA96C441C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76635C7188D3AB300D6C26C /* Build configuration list for PBXProject "ZappMerchantLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76635ED188D3AB300D6C26C /* Debug */,
+				A76635EE188D3AB300D6C26C /* Release */,
+				CDA96C401C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76635EF188D3AB300D6C26C /* Build configuration list for PBXNativeTarget "ZappMerchantLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76635F0188D3AB300D6C26C /* Debug */,
+				A76635F1188D3AB300D6C26C /* Release */,
+				CDA96C411C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76635F2188D3AB300D6C26C /* Build configuration list for PBXNativeTarget "ZappMerchantLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76635F3188D3AB300D6C26C /* Debug */,
+				A76635F4188D3AB300D6C26C /* Release */,
+				CDA96C451C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6CBC521BA703CE006899D6 /* Build configuration list for PBXAggregateTarget "ZappMerchantLibFat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6CBC531BA703CE006899D6 /* Debug */,
+				CD6CBC541BA703CE006899D6 /* Release */,
+				CDA96C431C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8F888C1BB5A0A400E754B6 /* Build configuration list for PBXNativeTarget "ZappMerchantLibExportHeaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8F888D1BB5A0A400E754B6 /* Debug */,
+				CD8F888E1BB5A0A400E754B6 /* Release */,
+				CDA96C421C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC4374218D305F5004DBB05 /* Build configuration list for PBXNativeTarget "ZappMerchantLibResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC4374318D305F5004DBB05 /* Debug */,
+				CDC4374418D305F5004DBB05 /* Release */,
+				CDA96C461C4E95C5002C64E0 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A76635C4188D3AB300D6C26C /* Project object */;
+}
