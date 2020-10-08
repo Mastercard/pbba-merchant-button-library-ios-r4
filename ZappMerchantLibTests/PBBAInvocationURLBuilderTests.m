@@ -3,7 +3,7 @@
 //  ZappMerchantLibTests
 //
 //  Created by Alex Maimescu on 09/10/2017.
-//  Copyright 2016 IPCO 2012 Limited
+//  Copyright (c) 2020 Mastercard
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
