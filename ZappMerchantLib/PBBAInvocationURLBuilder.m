@@ -85,7 +85,7 @@ static NSString * const kAPINameRequestToLinkAndPay = @"RequestToLinkAndPay";
             return kPBBACFIAppInvocationURLScheme;
             break;
         case PBBARequestTypeRequestToLinkAndPay:
-            return kPBBACFIAppInvocationURLScheme;
+            return kPBBACFIAppInvocationURLSchemeR4;
             break;
         case PBBARequestTypeRequestToLink:
             return kPBBACFIAppInvocationURLSchemeR4;
@@ -99,11 +99,9 @@ static NSString * const kAPINameRequestToLinkAndPay = @"RequestToLinkAndPay";
     NSString *apiName;
     
     switch (requestType) {
-        case PBBARequestTypeRequestToPay:
-            apiName = kAPINameRequestToPay;
-            break;
+            //Send apiName param value as RequestToPay for Link&Pay request- as per product requirement
         case PBBARequestTypeRequestToLinkAndPay:
-            apiName = kAPINameRequestToLinkAndPay;
+            apiName = kAPINameRequestToPay;
             break;
         case PBBARequestTypeRequestToLink:
             apiName = kAPINameRequestToLink;

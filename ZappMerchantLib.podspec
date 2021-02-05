@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors  = "Ujjwal Chafle"
   s.platform = :ios, '8.0'
 
-  s.source = { :git => 'https://github.com/vocalinkzapp/pbba-merchant-button-library-ios-R4.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/Mastercard/pbba-merchant-button-library-ios-R4.git', :tag => s.version.to_s }
   
   s.public_header_files = [
     "ZappMerchantLib/ZappMerchantLib.h",

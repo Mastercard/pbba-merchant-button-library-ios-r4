@@ -78,9 +78,7 @@ static NSString *sPBBACustomScheme = nil;
     if (secureToken) {
         PBBAInvocationURLBuilder *invocationURLBuilder = [PBBAInvocationURLBuilder new];
         [invocationURLBuilder withSecureToken:secureToken];
-        if (requestType == PBBARequestTypeRequestToLink) {
-            [invocationURLBuilder withRequestType:requestType];
-        }
+        [invocationURLBuilder withRequestType:requestType];
         [invocationURLBuilder withCustomScheme:sPBBACustomScheme];
         
         NSURL *invocationURL = [invocationURLBuilder build];
