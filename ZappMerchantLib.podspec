@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage = "http://paybybankapp.co.uk"
   s.license  = "Apache 2.0"
   s.authors  = "Ujjwal Chafle"
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '9.0'
 
   s.source = { :git => 'https://github.com/Mastercard/pbba-merchant-button-library-ios-R4.git', :tag => s.version.to_s }
   
@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
 
   s.ios.resource_bundle = { 'ZappMerchantLibResources' => [
       "ZappMerchantLibResources/**/*.ttf",
+     "ZappMerchantLibResources/**/*.strings",
       "ZappMerchantLibResources/**/*.lproj", 
       "ZappMerchantLibResources/*.xcassets",
       "ZappMerchantLib/**/*.xib",
