@@ -3,7 +3,7 @@
 //  ZappMerchantLib
 //
 //  Created by Alexandru Maimescu on 6/27/16.
-//  Copyright (c) 2020 Mastercard
+//  Copyright 2016 IPCO 2012 Limited
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -78,9 +78,7 @@ static NSString *sPBBACustomScheme = nil;
     if (secureToken) {
         PBBAInvocationURLBuilder *invocationURLBuilder = [PBBAInvocationURLBuilder new];
         [invocationURLBuilder withSecureToken:secureToken];
-        if (requestType == PBBARequestTypeRequestToLink) {
-            [invocationURLBuilder withRequestType:requestType];
-        }
+        [invocationURLBuilder withRequestType:requestType];
         [invocationURLBuilder withCustomScheme:sPBBACustomScheme];
         
         NSURL *invocationURL = [invocationURLBuilder build];
