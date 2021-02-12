@@ -39,10 +39,11 @@
 		04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C376BE216D10B100E5755A /* PBBAPopup.storyboard */; };
 		14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
 		14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */; };
-		14C10B561F87DEE600702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
-		14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
 		14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */; };
+		2440547825D6A20C0070ADAA /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
+		2440547925D6A2540070ADAA /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
+		2440547E25D6A4070070ADAA /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AF003B01B8DEB9B007C7980 /* Localizable.strings */; };
 		744148916F89CDBD1AEF0D3D /* libPods-ZappMerchantLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */; };
 		8A34BB12219ED1DE00AF8787 /* MarkOffcForMC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */; };
@@ -141,7 +142,6 @@
 		CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC4374518D306E8004DBB05 /* PBBAButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; };
 		CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
 		CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */; };
 		CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
 		CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */; };
@@ -202,7 +202,7 @@
 		043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBACustomUXConfig.h; sourceTree = "<group>"; };
 		043C9DA3215946F7002E9162 /* PBBACustomUXConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBACustomUXConfig.m; sourceTree = "<group>"; };
 		04C376BE216D10B100E5755A /* PBBAPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PBBAPopup.storyboard; sourceTree = "<group>"; };
-		14C10B511F87CA9900702936 /* PBBATypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBATypes.h; sourceTree = "<group>"; };
+		14C10B511F87CA9900702936 /* PBBATypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBATypes.h; sourceTree = "<group>"; };
 		14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAInvocationURLBuilder.h; sourceTree = "<group>"; };
 		14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilder.m; sourceTree = "<group>"; };
 		14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilderTests.m; sourceTree = "<group>"; };
@@ -700,7 +700,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */,
 				CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */,
 				043C9DA4215946F7002E9162 /* PBBACustomUXConfig.h in Headers */,
 				8A8D89DD216DD3C7005B580E /* PBBANetworkService.h in Headers */,
@@ -714,11 +713,11 @@
 				8AA851362149276100B4556F /* PBBAMoreAboutViewController.h in Headers */,
 				14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */,
 				CD7444F51D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
-				CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */,
 				C81AB95B1B6A81D500B621A2 /* PBBAUIElementAppearance.h in Headers */,
 				CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */,
 				C81AB95D1B6A81D500B621A2 /* PBBACodeView.h in Headers */,
 				8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */,
+				2440547925D6A2540070ADAA /* PBBATypes.h in Headers */,
 				CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
 				C81AB9621B6A81D500B621A2 /* PBBAButton.h in Headers */,
 				C81AB9631B6A81D500B621A2 /* PBBASquiggleView.h in Headers */,
@@ -734,6 +733,7 @@
 				C81AB93B1B6A7E9200B621A2 /* NSBundle+ZPMLib.h in Headers */,
 				C81AB93D1B6A7E9300B621A2 /* UIColor+ZPMLib.h in Headers */,
 				C81AB9401B6A7E9300B621A2 /* UIImage+ZPMLib.h in Headers */,
+				2440547825D6A20C0070ADAA /* PBBAAppUtils.h in Headers */,
 				8A3AB26C218B49F0005FF72A /* NSError+ZPMLib.h in Headers */,
 				CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */,
 				CD21761C1D24273000DA032D /* PBBAMComViewController.h in Headers */,
@@ -747,10 +747,10 @@
 			files = (
 				CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */,
 				CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */,
+				2440547E25D6A4070070ADAA /* PBBATypes.h in Headers */,
 				CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */,
 				CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */,
 				CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */,
-				14C10B561F87DEE600702936 /* PBBATypes.h in Headers */,
 				CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */,
 				14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */,
 				CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */,
@@ -970,7 +970,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nFRAMEWORK_NAME=${PROJECT_NAME}\n\nINPUT_STATIC_LIB_LOCATION=\"${BUILT_PRODUCTS_DIR}/lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nOTHER_FRAMEWORK_LOCATION=\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nBRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | tr / -)\nOUTPUT_DIR=\"${HOME}/Desktop/${FRAMEWORK_NAME}-${BRANCH_NAME}\"\n\n# Create the path to the real Headers dir\n/bin/mkdir -p \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCATION}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCATION}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCATION}/${PRODUCT_NAME}\"\n\n# Export framework\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\nditto \"${FRAMEWORK_LOCATION}\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# Export fat lib and headers\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${OUTPUT_DIR}/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${OUTPUT_DIR}/lib${PROJECT_NAME}.a\"\n\n# Export resource bundle\nditto \"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}Resources.bundle\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}Resources.bundle\"";
+			shellScript = "set -e\n\nFRAMEWORK_NAME=${PROJECT_NAME}\n\nINPUT_STATIC_LIB_LOCATION=\"${BUILT_PRODUCTS_DIR}/lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nOTHER_FRAMEWORK_LOCATION=\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nBRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | tr / -)\nOUTPUT_DIR=\"${HOME}/Desktop/${FRAMEWORK_NAME}-${BRANCH_NAME}\"\n\n# Create the path to the real Headers dir\n/bin/mkdir -p \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCATION}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCATION}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCATION}/${PRODUCT_NAME}\"\n\n# Export framework\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\nditto \"${FRAMEWORK_LOCATION}\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# Export fat lib and headers\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${OUTPUT_DIR}/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${OUTPUT_DIR}/lib${PROJECT_NAME}.a\"\n\n# Export resource bundle\nditto \"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}Resources.bundle\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}Resources.bundle\"\n";
 		};
 		CD6CBC551BA703D7006899D6 /* Build Fat Lib */ = {
 			isa = PBXShellScriptBuildPhase;

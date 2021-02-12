@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   
   s.public_header_files = [
     "ZappMerchantLib/ZappMerchantLib.h",
+    "ZappMerchantLib/PBBATypes.h",
     "ZappMerchantLib/PBBAAppUtils.h",
     "ZappMerchantLib/PBBAButton.h",
     "ZappMerchantLib/PBBAPopupViewController.h",
