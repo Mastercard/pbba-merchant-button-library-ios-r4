@@ -106,6 +106,9 @@ static NSString * const kAPINameRequestToLinkAndPay = @"RequestToLinkAndPay";
         case PBBARequestTypeRequestToLink:
             apiName = kAPINameRequestToLink;
             break;
+        case PBBARequestTypeRequestToPay:
+            //leaving blank as not required
+            break;
     }
     
     return [NSURLQueryItem queryItemWithName:@"apiName" value:apiName];

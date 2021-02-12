@@ -77,7 +77,7 @@
                                      expiryInterval:(NSUInteger) expiryInterval
                                         requestType:(PBBARequestType)requestType
                                            delegate:(nullable id<PBBAPopupViewControllerDelegate>)delegate
-                                            NS_SWIFT_NAME(showPBBAPopup(presenter:secureToken:brn:requestType:delegate:));
+                                            NS_SWIFT_NAME(showPBBAPopup(presenter:secureToken:brn:expiryInterval:requestType:delegate:));
 
 /**
  *  Show PBBA error popup view controller.
