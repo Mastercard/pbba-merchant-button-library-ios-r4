@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MarkOffcForMC.ttf">
-            <string>MarkOffcForMC</string>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -36,7 +34,7 @@
                                     <variation key="heightClass=compact-widthClass=regular" constant="222"/>
                                 </constraint>
                             </constraints>
-                            <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
@@ -146,6 +144,7 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="pNo-hF-1Fc"/>
                             <exclude reference="3jR-f0-c5H"/>
                             <exclude reference="CZf-cD-2Af"/>
                             <exclude reference="FoJ-iN-Rvv"/>
@@ -153,7 +152,6 @@
                             <exclude reference="TG8-3j-Zg5"/>
                             <exclude reference="Vm0-te-UkZ"/>
                             <exclude reference="d2A-xR-TVY"/>
-                            <exclude reference="pNo-hF-1Fc"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=compact">
@@ -187,11 +185,11 @@
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
+                            <exclude reference="iyg-SV-WUv"/>
                             <exclude reference="9Ye-DY-GvW"/>
                             <include reference="CZf-cD-2Af"/>
                             <include reference="Suk-8w-P5e"/>
                             <exclude reference="ywK-YG-fPY"/>
-                            <exclude reference="iyg-SV-WUv"/>
                         </mask>
                     </variation>
                 </view>

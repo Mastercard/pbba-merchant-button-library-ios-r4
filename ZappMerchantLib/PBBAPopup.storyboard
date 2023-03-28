@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="2064" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MarkOffcForMC-Medium.ttf">
-            <string>MarkOffcForMC-Medium</string>
+        <array key="OpenSans-Medium.ttf">
+            <string>OpenSans-Medium</string>
         </array>
-        <array key="MarkOffcForMC.ttf">
-            <string>MarkOffcForMC</string>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -365,8 +365,8 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="392"/>
                                                     </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="14"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -466,7 +466,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="167" id="Cke-Pb-vR9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -486,7 +486,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="hAg-mn-BtE"/>
                                                     <constraint firstAttribute="width" constant="118" id="ze4-ZQ-PYh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -542,7 +542,7 @@
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You choose Pay by Bank app at the checkout." textAlignment="natural" lineBreakMode="clip" numberOfLines="0" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-fZ-MlF">
                                                                 <rect key="frame" x="31.5" y="3" width="168.5" height="27"/>
-                                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="18"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -616,7 +616,7 @@
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm payment amount in your mobile bank app." textAlignment="natural" lineBreakMode="clip" numberOfLines="0" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UbT-kM-480">
                                                                 <rect key="frame" x="33" y="3.5" width="166.5" height="26.5"/>
-                                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="20"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -666,7 +666,7 @@
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy with everything?Complete payment." textAlignment="natural" lineBreakMode="clip" numberOfLines="0" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-Nn-CMh">
                                                                 <rect key="frame" x="33" y="3.5" width="148" height="27.5"/>
-                                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="20"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1090,7 +1090,7 @@
                                                                 <rect key="frame" x="16" y="152.5" width="144" height="38.5"/>
                                                                 <string key="text">Log in to your mobile 
 banking app.</string>
-                                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="18"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                                 <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1166,7 +1166,7 @@ banking app.</string>
                                                                 <rect key="frame" x="24" y="152.5" width="128" height="38.5"/>
                                                                 <string key="text">Find the Pay by Bank 
 app option.</string>
-                                                                <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="18"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <color key="highlightedColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </label>
@@ -1564,7 +1564,7 @@ app option.</string>
                                                             <constraint firstAttribute="width" constant="146" id="54u-Jo-rRc"/>
                                                             <constraint firstAttribute="width" constant="153.5" id="Hf8-z4-gnN"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                                         <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -2102,7 +2102,7 @@ app option.</string>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="39" id="PVk-7M-IVe"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="16"/>
                                                         <state key="normal" title="Open banking app">
                                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -2119,7 +2119,7 @@ app option.</string>
                                                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                                                             </constraint>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="12"/>
                                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="More about Pay by Bank app" image="icon-more-about-pbba">
                                                             <color key="titleColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2138,7 +2138,7 @@ app option.</string>
                                                         <string key="text">Tap the button below to open your 
 mobile banking app and log in 
 to complete your request.</string>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="default">
@@ -2158,7 +2158,7 @@ to complete your request.</string>
                                                             <constraint firstAttribute="height" constant="21.5" id="Hi7-2s-Uf8"/>
                                                             <constraint firstAttribute="height" constant="25.329999999999998" id="OOi-Gi-P06"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="24"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="24"/>
                                                         <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2381,11 +2381,11 @@ to complete your request.</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Continue with another device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="rMP-jP-rTF" userLabel="Get Zapp Code Title Label">
-                                                        <rect key="frame" x="63.5" y="27.5" width="193" height="28"/>
+                                                        <rect key="frame" x="63.5" y="27.5" width="193" height="33"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.333333333333332" id="uCV-k1-QbQ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="24"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="24"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2393,7 +2393,7 @@ to complete your request.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Lo-91-7ZK" userLabel="Get Zapp Code Message Label">
-                                                        <rect key="frame" x="56.5" y="75.5" width="207" height="45"/>
+                                                        <rect key="frame" x="56.5" y="80.5" width="207" height="45"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="2ds-Q5-gyR"/>
@@ -2401,7 +2401,7 @@ to complete your request.</string>
                                                         </constraints>
                                                         <string key="text">Tap this button if you use another 
 device for your mobile banking app</string>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
                                                         <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2419,15 +2419,15 @@ device for your mobile banking app</string>
                                                         </variation>
                                                     </label>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erM-dJ-E6B" userLabel="Get Zapp Code Button" customClass="PBBAPopupButton">
-                                                        <rect key="frame" x="61.5" y="145.5" width="197" height="39"/>
+                                                        <rect key="frame" x="61.5" y="150.5" width="197" height="39"/>
                                                         <color key="backgroundColor" red="0.89019607840000003" green="0.87450980389999999" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="39" id="v6I-um-wwV"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="16"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="  Get      code">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleColor" systemColor="darkTextColor"/>
                                                             <color key="titleShadowColor" red="0.89019607840000003" green="0.87450980389999999" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -2438,7 +2438,7 @@ device for your mobile banking app</string>
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pbba_get_code" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-Wn-0tj">
-                                                        <rect key="frame" x="152.5" y="156" width="15.5" height="18"/>
+                                                        <rect key="frame" x="152.5" y="161" width="15.5" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="ZwR-KS-isD"/>
                                                             <constraint firstAttribute="width" constant="15.5" id="n8G-Sy-1ga"/>
@@ -2817,5 +2817,8 @@ device for your mobile banking app</string>
         <image name="step_2" width="60" height="60"/>
         <image name="step_2_phone_menu" width="149.5" height="277.5"/>
         <image name="step_3" width="60" height="60"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

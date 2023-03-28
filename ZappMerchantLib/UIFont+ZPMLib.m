@@ -3,7 +3,7 @@
 //  ZappMerchantLib
 //
 //  Created by Alexandru Maimescu on 8/12/14.
-//  Copyright (c) 2020 Mastercard
+//  Copyright 2016 IPCO 2012 Limited
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -23,10 +23,10 @@
 
 #import "NSBundle+ZPMLib.h"
 
-static NSString * const kZPMBoldFont        = @"MarkOffcForMC-Bold";
-static NSString * const kZPMRegularFont     = @"MarkOffcForMC";
-static NSString * const kZPMHeavyFont       = @"MarkOffcForMC-Heavy";
-static NSString * const kZPMMediumFont      = @"MarkOffcForMC-Medium";
+static NSString * const kZPMBoldFont        = @"OpenSans-Bold";
+static NSString * const kZPMRegularFont     = @"OpenSans-Regular";
+static NSString * const kZPMHeavyFont       = @"OpenSans-ExtraBold";
+static NSString * const kZPMMediumFont      = @"OpenSans-Medium";
 
 
 

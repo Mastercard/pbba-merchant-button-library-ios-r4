@@ -39,17 +39,12 @@
 		04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C376BE216D10B100E5755A /* PBBAPopup.storyboard */; };
 		14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
 		14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */; };
+		14C10B561F87DEE600702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
+		14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
 		14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */; };
-		2440547825D6A20C0070ADAA /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
-		2440547925D6A2540070ADAA /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
-		2440547E25D6A4070070ADAA /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AF003B01B8DEB9B007C7980 /* Localizable.strings */; };
 		744148916F89CDBD1AEF0D3D /* libPods-ZappMerchantLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */; };
-		8A34BB12219ED1DE00AF8787 /* MarkOffcForMC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */; };
-		8A34BB13219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */; };
-		8A34BB14219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */; };
-		8A34BB15219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */; };
 		8A3AB260218B259D005FF72A /* PBBAPopupContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */; };
 		8A3AB261218B259D005FF72A /* PBBAPopupContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */; };
 		8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB266218B32ED005FF72A /* PBBAErrorView.h */; };
@@ -142,6 +137,7 @@
 		CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC4374518D306E8004DBB05 /* PBBAButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; };
 		CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
 		CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */; };
 		CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
 		CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */; };
@@ -157,6 +153,10 @@
 		CDD98902199A5018008A082A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD98901199A5018008A082A /* CoreText.framework */; };
 		CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */; };
 		CDF165A31D2423AD00E70873 /* PBBACodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD413E071D241BD700474397 /* PBBACodeView.xib */; };
+		DF97729829CB5B9C001A815D /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF97729429CB5B9C001A815D /* OpenSans-ExtraBold.ttf */; };
+		DF97729929CB5B9C001A815D /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF97729529CB5B9C001A815D /* OpenSans-Bold.ttf */; };
+		DF97729A29CB5B9C001A815D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF97729629CB5B9C001A815D /* OpenSans-Regular.ttf */; };
+		DF97729B29CB5B9C001A815D /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF97729729CB5B9C001A815D /* OpenSans-Medium.ttf */; };
 		F14E72FE199A546100818A7C /* UIColor+ZPMLib.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E72FD199A546100818A7C /* UIColor+ZPMLib.m */; };
 /* End PBXBuildFile section */
 
@@ -202,17 +202,13 @@
 		043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBACustomUXConfig.h; sourceTree = "<group>"; };
 		043C9DA3215946F7002E9162 /* PBBACustomUXConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBACustomUXConfig.m; sourceTree = "<group>"; };
 		04C376BE216D10B100E5755A /* PBBAPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PBBAPopup.storyboard; sourceTree = "<group>"; };
-		14C10B511F87CA9900702936 /* PBBATypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBATypes.h; sourceTree = "<group>"; };
+		14C10B511F87CA9900702936 /* PBBATypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBATypes.h; sourceTree = "<group>"; };
 		14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAInvocationURLBuilder.h; sourceTree = "<group>"; };
 		14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilder.m; sourceTree = "<group>"; };
 		14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilderTests.m; sourceTree = "<group>"; };
 		5AF003B01B8DEB9B007C7980 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		69880497BC0F436956D58E21 /* Pods-ZappMerchantLibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7743DFBF8A632ACF2F874AF4 /* Pods-ZappMerchantLibTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.development.xcconfig"; sourceTree = "<group>"; };
-		8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkOffcForMC.ttf; sourceTree = "<group>"; };
-		8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Bold.ttf"; sourceTree = "<group>"; };
-		8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Heavy.ttf"; sourceTree = "<group>"; };
-		8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcForMC-Medium.ttf"; sourceTree = "<group>"; };
 		8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAPopupContentViewController.m; sourceTree = "<group>"; };
 		8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupContentViewController.h; sourceTree = "<group>"; };
 		8A3AB266218B32ED005FF72A /* PBBAErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAErrorView.h; sourceTree = "<group>"; };
@@ -305,6 +301,10 @@
 		CDD98901199A5018008A082A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAUIElementAppearance.h; sourceTree = "<group>"; };
 		CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAPopupButton.h; sourceTree = "<group>"; };
+		DF97729429CB5B9C001A815D /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DF97729529CB5B9C001A815D /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DF97729629CB5B9C001A815D /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DF97729729CB5B9C001A815D /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
 		F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZPMLib.h"; sourceTree = "<group>"; };
 		F14E72FD199A546100818A7C /* UIColor+ZPMLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZPMLib.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -649,10 +649,10 @@
 		CDBA1D071999036D000D4EF8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8A34BB0F219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf */,
-				8A34BB10219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf */,
-				8A34BB11219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf */,
-				8A34BB0E219ED1DD00AF8787 /* MarkOffcForMC.ttf */,
+				DF97729529CB5B9C001A815D /* OpenSans-Bold.ttf */,
+				DF97729429CB5B9C001A815D /* OpenSans-ExtraBold.ttf */,
+				DF97729729CB5B9C001A815D /* OpenSans-Medium.ttf */,
+				DF97729629CB5B9C001A815D /* OpenSans-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -700,6 +700,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */,
 				CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */,
 				043C9DA4215946F7002E9162 /* PBBACustomUXConfig.h in Headers */,
 				8A8D89DD216DD3C7005B580E /* PBBANetworkService.h in Headers */,
@@ -713,11 +714,11 @@
 				8AA851362149276100B4556F /* PBBAMoreAboutViewController.h in Headers */,
 				14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */,
 				CD7444F51D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
+				CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */,
 				C81AB95B1B6A81D500B621A2 /* PBBAUIElementAppearance.h in Headers */,
 				CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */,
 				C81AB95D1B6A81D500B621A2 /* PBBACodeView.h in Headers */,
 				8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */,
-				2440547925D6A2540070ADAA /* PBBATypes.h in Headers */,
 				CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
 				C81AB9621B6A81D500B621A2 /* PBBAButton.h in Headers */,
 				C81AB9631B6A81D500B621A2 /* PBBASquiggleView.h in Headers */,
@@ -733,7 +734,6 @@
 				C81AB93B1B6A7E9200B621A2 /* NSBundle+ZPMLib.h in Headers */,
 				C81AB93D1B6A7E9300B621A2 /* UIColor+ZPMLib.h in Headers */,
 				C81AB9401B6A7E9300B621A2 /* UIImage+ZPMLib.h in Headers */,
-				2440547825D6A20C0070ADAA /* PBBAAppUtils.h in Headers */,
 				8A3AB26C218B49F0005FF72A /* NSError+ZPMLib.h in Headers */,
 				CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */,
 				CD21761C1D24273000DA032D /* PBBAMComViewController.h in Headers */,
@@ -747,10 +747,10 @@
 			files = (
 				CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */,
 				CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */,
-				2440547E25D6A4070070ADAA /* PBBATypes.h in Headers */,
 				CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */,
 				CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */,
 				CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */,
+				14C10B561F87DEE600702936 /* PBBATypes.h in Headers */,
 				CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */,
 				14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */,
 				CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */,
@@ -906,22 +906,22 @@
 			files = (
 				04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */,
 				A2FC5E1521AC1D36000625F6 /* PBBACustomButton.xib in Resources */,
+				DF97729929CB5B9C001A815D /* OpenSans-Bold.ttf in Resources */,
 				CD8501501D2426CE00C06582 /* PBBAErrorView.xib in Resources */,
 				CDF165A31D2423AD00E70873 /* PBBACodeView.xib in Resources */,
-				8A34BB14219ED1DE00AF8787 /* MarkOffcForMC-Heavy.ttf in Resources */,
 				5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */,
+				DF97729B29CB5B9C001A815D /* OpenSans-Medium.ttf in Resources */,
 				8A8D89D1216DCEB9005B580E /* PBBAButton.xib in Resources */,
 				A2FC5E2B21AC3F84000625F6 /* PBBACustomButtonBankLogosLayouts.xib in Resources */,
-				8A34BB12219ED1DE00AF8787 /* MarkOffcForMC.ttf in Resources */,
 				CDC4374018D305F5004DBB05 /* InfoPlist.strings in Resources */,
-				8A34BB15219ED1DE00AF8787 /* MarkOffcForMC-Medium.ttf in Resources */,
 				A2FC5E1C21AC3BFF000625F6 /* PBBACustomButtonBankLogosContainer.xib in Resources */,
 				CD71EE111D23E42C007135B8 /* Media.xcassets in Resources */,
-				8A34BB13219ED1DE00AF8787 /* MarkOffcForMC-Bold.ttf in Resources */,
 				8AA851462149281D00B4556F /* PBBABankLogosLayouts.xib in Resources */,
 				8AD714CF219D660C0083C296 /* PBBABankLogosCommonLayout.xib in Resources */,
 				8AA851472149282000B4556F /* PBBABankLogosContainer.xib in Resources */,
+				DF97729A29CB5B9C001A815D /* OpenSans-Regular.ttf in Resources */,
 				8A8D89D2216DCEB9005B580E /* PBBAButtonMain.xib in Resources */,
+				DF97729829CB5B9C001A815D /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -970,7 +970,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nFRAMEWORK_NAME=${PROJECT_NAME}\n\nINPUT_STATIC_LIB_LOCATION=\"${BUILT_PRODUCTS_DIR}/lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nOTHER_FRAMEWORK_LOCATION=\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nBRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | tr / -)\nOUTPUT_DIR=\"${HOME}/Desktop/${FRAMEWORK_NAME}-${BRANCH_NAME}\"\n\n# Create the path to the real Headers dir\n/bin/mkdir -p \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCATION}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCATION}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCATION}/${PRODUCT_NAME}\"\n\n# Export framework\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\nditto \"${FRAMEWORK_LOCATION}\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# Export fat lib and headers\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${OUTPUT_DIR}/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${OUTPUT_DIR}/lib${PROJECT_NAME}.a\"\n\n# Export resource bundle\nditto \"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}Resources.bundle\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}Resources.bundle\"\n";
+			shellScript = "set -e\n\nFRAMEWORK_NAME=${PROJECT_NAME}\n\nINPUT_STATIC_LIB_LOCATION=\"${BUILT_PRODUCTS_DIR}/lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nOTHER_FRAMEWORK_LOCATION=\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nBRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | tr / -)\nOUTPUT_DIR=\"${HOME}/Desktop/${FRAMEWORK_NAME}-${BRANCH_NAME}\"\n\n# Create the path to the real Headers dir\n/bin/mkdir -p \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCATION}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCATION}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCATION}/${PRODUCT_NAME}\"\n\n# Export framework\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCATION}/Versions/A/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\nditto \"${FRAMEWORK_LOCATION}\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# Export fat lib and headers\nditto \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${OUTPUT_DIR}/Headers\"\nditto \"${INPUT_STATIC_LIB_LOCATION}\" \"${OUTPUT_DIR}/lib${PROJECT_NAME}.a\"\n\n# Export resource bundle\nditto \"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}Resources.bundle\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}Resources.bundle\"";
 		};
 		CD6CBC551BA703D7006899D6 /* Build Fat Lib */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1118,7 +1118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
@@ -1134,7 +1134,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
@@ -1190,7 +1190,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1233,7 +1233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1251,6 +1251,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1277,6 +1278,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1359,7 +1361,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1376,7 +1378,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1422,7 +1424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1442,6 +1444,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1463,7 +1466,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1485,7 +1488,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = "1.2.0-1.2.0.1-d53ce11-REL";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
@@ -1522,7 +1525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1545,7 +1548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1565,7 +1568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
