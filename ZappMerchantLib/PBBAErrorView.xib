@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MarkOffcForMC-Medium.ttf">
-            <string>MarkOffcForMC-Medium</string>
+        <array key="OpenSans-Medium.ttf">
+            <string>OpenSans-Medium</string>
         </array>
-        <array key="MarkOffcForMC.ttf">
-            <string>MarkOffcForMC</string>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -29,7 +27,7 @@
                     </constraints>
                     <string key="text">Tap on the button below
 to generate a new code.</string>
-                    <fontDescription key="fontDescription" name="MarkOffcForMC" family="Mark Offc For MC" pointSize="12"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                     <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=compact">
@@ -80,7 +78,7 @@ to generate a new code.</string>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="t4B-dw-ja4"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="10"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="10"/>
                     <state key="normal" title="Try again"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -103,11 +101,11 @@ to generate a new code.</string>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There has been a problem" textAlignment="center" lineBreakMode="clip" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-d7-she">
                     <rect key="frame" x="14.5" y="15" width="260" height="19.5"/>
-                    <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="12"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="12"/>
                     <color key="textColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="MarkOffcForMC-Medium" family="Mark Offc For MC" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Medium" family="Open Sans" pointSize="14"/>
                     </variation>
                 </label>
             </subviews>
