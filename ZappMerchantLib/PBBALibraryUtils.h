@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 #import "PBBATypes.h"
@@ -117,6 +118,11 @@ extern NSString * _Nonnull const kPBBACFIAppNameKey;
  *  @return YES if the process of hand-off to CFI app was successful.
  */
 + (BOOL)openBankingApp:(nonnull NSString *)secureToken requestType:(PBBARequestType)requestType;
+
+/**
+ *  Open the App picker.
+ */
++ (void)openAppPicker:(NSString *_Nullable)secureToken requestType:(PBBARequestType)requestType brn:(NSString *_Nullable)brn expiryInterval:(NSUInteger)expiryInterval presenter:(UIViewController *_Nullable)presenter;
 
 /**
  *  Check if CFI app should be launched without showing the popup.

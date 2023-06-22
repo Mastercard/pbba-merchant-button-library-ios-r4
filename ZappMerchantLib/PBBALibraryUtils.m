@@ -22,6 +22,8 @@
 
 #import "PBBALibraryUtils.h"
 #import "PBBAInvocationURLBuilder.h"
+#import "PBBAAppPickerViewController.h"
+#import "NSBundle+PBBAUtils.h"
 
 NSString * const kPBBACustomThemeKey = @"pbbaTheme";
 NSString * const kPBBACFIAppNameKey = @"cfiAppName";
@@ -31,9 +33,12 @@ static NSString * const kPBBACustomConfigFileName           = @"pbbaCustomConfig
 
 static NSString * const kPBBAPaymentsInfoURLString          = @"http://www.paybybankapp.co.uk/how-it-works/the-experience/";
 static NSString * const kPBBARememberCFIAppLaunchKey        = @"com.zapp.bankapp.remembered";
+static NSString * const kPBBAAppPickerApps = @"LSApplicationQueriesSchemes";
 
 static NSDictionary *sPBBACustomConfig = nil;
 static NSString *sPBBACustomScheme = nil;
+
+static NSArray *installedItems = nil;
 
 @implementation PBBALibraryUtils
 
@@ -59,18 +64,22 @@ static NSString *sPBBACustomScheme = nil;
 
 + (BOOL)isCFIAppAvailableForRequestType:(PBBARequestType)requestType
 {
-    PBBAInvocationURLBuilder *invocationURLBuilder = [PBBAInvocationURLBuilder new];
-    [invocationURLBuilder withRequestType:requestType];
-    [invocationURLBuilder withCustomScheme:sPBBACustomScheme];
+    NSArray *appsArray = [self appPickerAppsList];
     
-    NSURL *urlToCheck = [invocationURLBuilder build];
-    BOOL cfiAppAvailable = [[UIApplication sharedApplication] canOpenURL:urlToCheck];
+    NSMutableArray *installedItems = [NSMutableArray array];
+    for (NSString *appURL in appsArray) {
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@://test", appURL]]]) {
+            [installedItems addObject:appURL];
+        }
+    }    
     
-    if (!cfiAppAvailable) {
+    if (installedItems.count) {
+        return YES;
+    } else {
         [self saveFlagValue:NO forKey:kPBBARememberCFIAppLaunchKey];
+        return NO;
     }
-    
-    return cfiAppAvailable;
+
 }
 
 + (BOOL)openBankingApp:(NSString *)secureToken requestType:(PBBARequestType)requestType
@@ -87,6 +96,20 @@ static NSString *sPBBACustomScheme = nil;
     }
     
     return NO;
+}
+
++ (void)openAppPicker:(NSString *_Nullable)secureToken requestType:(PBBARequestType)requestType brn:(NSString *_Nullable)brn expiryInterval:(NSUInteger) expiryInterval presenter:(UIViewController *_Nullable)presenter {
+    PBBAAppPickerViewController *appPickerViewController = [[PBBAAppPickerViewController alloc] initWithNibName:@"PBBAAppPickerViewController" bundle:[NSBundle pbba_bundle]];
+    appPickerViewController.providesPresentationContextTransitionStyle = YES;
+    appPickerViewController.definesPresentationContext = YES;
+    [appPickerViewController setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    appPickerViewController.delegate = presenter;
+    appPickerViewController.requestType = requestType;
+    appPickerViewController.secureToken = secureToken;
+    appPickerViewController.presenter = presenter;
+    appPickerViewController.brn = brn;
+    appPickerViewController.expiryInterval = expiryInterval;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:appPickerViewController animated:YES completion:nil];
 }
 
 + (void)registerCFIAppLaunch
@@ -117,6 +140,14 @@ static NSString *sPBBACustomScheme = nil;
         //make sure the configurations are loaded from the Appconfig.plist
     }
     return  [[NSUserDefaults standardUserDefaults] boolForKey:kPBBACFILogosKey];
+}
+
++ (NSArray<NSString *> *)appPickerAppsList
+{
+    NSArray *appPickerQueriedURLSchemes = [[NSBundle mainBundle] objectForInfoDictionaryKey:kPBBAAppPickerApps];
+    NSAssert(appPickerQueriedURLSchemes,
+             @"[PBBA] Missing mandatory value for LSApplicationQueriesSchemes key in Info.plist file.");
+    return appPickerQueriedURLSchemes;
 }
 
 @end

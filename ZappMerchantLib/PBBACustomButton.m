@@ -85,50 +85,55 @@ customUXType = _customUXType;
 
 - (void)setupStyle
 {
-    [self.container.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
-     {
-         
-         self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:nil errorBlock:nil];
-         
-         if ([obj isKindOfClass:[UIImageView class]])
-         {
-             UIImageView *brandImageView = obj;
-             brandImageView.image  = [UIImage pbba_imageNamed:@"full-image-title"];
-         }
-             if ([obj isKindOfClass:[UIButton class]])
-         {
-             UIButton* moreAboutButton = obj;
-             [moreAboutButton.titleLabel setFont:[UIFont pbba_boldFontWithSize:12.0f]];
-             [moreAboutButton.titleLabel setTextColor:[UIColor pbba_buttonBackgroundColor]];
-             [moreAboutButton setTitle:PBBALocalizedString(@"com.zapp.pbba.button.moreAbout") forState:UIControlStateNormal];
-             [moreAboutButton addTarget:self action:@selector(openMoreAbout) forControlEvents:UIControlEventTouchUpInside];
-         }
-         if ([obj isKindOfClass:[PBBACustomButtonBankLogosContainer class]])
-         {
-             PBBACustomButtonBankLogosContainer* bankLogosContainer = obj;
-             NSInteger x = 0;
-             NSInteger y = 0;
-
-             for (int i = 0; i < [self.logosService.smallLogos count]; i++)
-             {
-                 if (x > self.frame.size.width)
-                 {
-                     x = 0;
-                     y = 35;
-                 }
-                 x += 35;
-             }
-
-             NSLayoutConstraint *heightConstant =  bankLogosContainer.constraints.lastObject;
-             if (![self.logosService.smallLogos count]) {
-                 heightConstant.constant = 0;
-             } else {
-                 heightConstant.constant = y+30;
-             }
-             [bankLogosContainer updateConstraints];
-             [bankLogosContainer setLogosService:self.logosService];
-         }
+    self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:nil errorBlock:nil];
+    [self.container.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self initialSetup:obj];
      }];
+}
+
+- (void) initialSetup: (UIView *) obj
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if ([obj isKindOfClass:[UIImageView class]])
+        {
+            UIImageView *brandImageView = (UIImageView *) obj;
+            brandImageView.image  = [UIImage pbba_imageNamed:@"full-image-title"];
+        }
+        if ([obj isKindOfClass:[UIButton class]])
+        {
+            UIButton* moreAboutButton = (UIButton *) obj;
+            [moreAboutButton.titleLabel setFont:[UIFont pbba_boldFontWithSize:12.0f]];
+            [moreAboutButton.titleLabel setTextColor:[UIColor pbba_buttonBackgroundColor]];
+            [moreAboutButton setTitle:PBBALocalizedString(@"com.zapp.pbba.button.moreAbout") forState:UIControlStateNormal];
+            [moreAboutButton addTarget:self action:@selector(openMoreAbout) forControlEvents:UIControlEventTouchUpInside];
+        }
+        if ([obj isKindOfClass:[PBBACustomButtonBankLogosContainer class]])
+        {
+            PBBACustomButtonBankLogosContainer* bankLogosContainer = (PBBACustomButtonBankLogosContainer *) obj;
+            NSInteger x = 0;
+            NSInteger y = 0;
+
+            for (int i = 0; i < [self.logosService.smallLogos count]; i++)
+            {
+                if (x > self.frame.size.width)
+                {
+                    x = 0;
+                    y = 35;
+                }
+                x += 35;
+            }
+
+            NSLayoutConstraint *heightConstant =  bankLogosContainer.constraints.lastObject;
+            if (![self.logosService.smallLogos count]) {
+                heightConstant.constant = 0;
+            } else {
+                heightConstant.constant = y+30;
+            }
+            [bankLogosContainer updateConstraints];
+            [bankLogosContainer setLogosService:self.logosService];
+        }
+    });
 }
 
 - (void)openMoreAbout {

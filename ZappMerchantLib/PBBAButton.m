@@ -71,25 +71,36 @@ containerForPBBAView = _containerForPBBAView;
 {
     // Get logo URLs
 //     if ([PBBALibraryUtils shouldShowCFILogos]) {
-        self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:nil errorBlock:nil];
+//        self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:nil errorBlock:nil];
 //     }
     
-    // Setup Constraints
-    self.translatesAutoresizingMaskIntoConstraints = NO;
-    self.containerForPBBAView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    // Centrate the layout in the placeholder
-    [self addSubview:self.containerForPBBAView];
-    [self.containerForPBBAView pbba_width:self.containerForPBBAView.frame.size.width];
-    [self.containerForPBBAView pbba_height:self.containerForPBBAView.frame.size.height];
-    [self.containerForPBBAView pbba_centerInSuperview];
-    
-    // Setup font and text
-    [self setupStyle];
-    
-    // Layout view
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
+    self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:^(NSArray<PBBABankLogo *> *logos) {
+        [self initialSetup];
+    } errorBlock:^(NSError *error) {
+        [self initialSetup];
+    }];
+}
+
+- (void) initialSetup
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // Setup Constraints
+        self.translatesAutoresizingMaskIntoConstraints = NO;
+        self.containerForPBBAView.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        // Centrate the layout in the placeholder
+        [self addSubview:self.containerForPBBAView];
+        [self.containerForPBBAView pbba_width:self.containerForPBBAView.frame.size.width];
+        [self.containerForPBBAView pbba_height:self.containerForPBBAView.frame.size.height];
+        [self.containerForPBBAView pbba_centerInSuperview];
+        
+        // Setup font and text
+        [self setupStyle];
+        
+        // Layout view
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+    });
 }
 
 

@@ -68,3 +68,10 @@
 "com.zapp.ecom.noBankAppAdviceMessage"  = "Follow the steps below to complete this request on another device:";
 "com.zapp.ecom.noBankAppAdviceMessage2" = "Follow the steps on the right to complete this request on another device:";
 
+// App Picker 
+"com.pbba.continue.button.title.format" = "Continue with %@";
+"com.pbba.cancel.button.title"          = "Close menu";
+"com.pbba.cancel.alert.title"           = "Are you sure?";
+"com.pbba.cancel.alert.message"         = "\nYou won’t be able to use a mobile banking app to complete this request if you close\n";
+"com.pbba.cancel.alert.confirm"         = "Yes";
+"com.pbba.cancel.alert.decline"         = "No";

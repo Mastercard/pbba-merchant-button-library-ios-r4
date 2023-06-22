@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "cacheLifetime": 24,
+    "apps": [
+             {
+             "appName": "Bank 3",
+             "appURLScheme": "vanillabank-3",
+             "appIconURL": "http://www.retailmine.co.uk/cfi-logos/bank3.png",
+             "appIconHash": "GInZ5dZhiZD0gee67VvxqiBuRiBDBOx3UziFKcRTHR4="
+             },
+             {
+             "appName": "Bank Too",
+             "appURLScheme": "vanillabank-2",
+             "appIconURL": "http://www.retailmine.co.uk/cfi-logos/banktoo.png",
+             "appIconHash": "Uz4vB68F__2NmCDUEEQ0WgLRDkVcP5kg4BzzRFoFPmw="
+             },
+             {
+             "appName": "Test Bank 1",
+             "appURLScheme": "testbank1",
+             "appIconURL": "http://www.retailmine.co.uk/cfi-logos/testbank1.png",
+             "appIconHash": "GInZ5dZhiZD0gee67VvxqiBuRiBDBOx3UziFKcRTHR4="
+             },
+             {
+             "appName": "Test Bank 2",
+             "appURLScheme": "testbank2",
+             "appIconURL": "http://www.retailmine.co.uk/cfi-logos/testbank2.png",
+             "appIconHash": "GInZ5dZhiZD0gee67VvxqiBuRiBDBOx3UziFKcRTHR4="
+             },
+             {
+             "appName": "Test Bank 3",
+             "appURLScheme": "testbank3",
+             "appIconURL": "http://www.retailmine.co.uk/cfi-logos/testbank3.png",
+             "appIconHash": "GInZ5dZhiZD0gee67VvxqiBuRiBDBOx3UziFKcRTHR4="
+             }
+             ]
+}

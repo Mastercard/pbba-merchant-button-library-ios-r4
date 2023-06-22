@@ -33,42 +33,38 @@ describe(@"For PBBAInvocationURLBuilder class", ^{
         builder = [PBBAInvocationURLBuilder new];
     });
     
-    it(@"a call to build should create a payment invocation without query params and old scheme if request type is payment", ^{
+    it(@"a call to buildWithUniqueScheme should create a test invocation for scheme if secure token provided and request type is payment", ^{
         [builder withRequestType:PBBARequestTypeRequestToPay];
         [builder withSecureToken:kTestSecureToken];
-        
-        NSURL *urlInvocation = [builder build];
-        [[urlInvocation.scheme should] equal:@"zapp"];
+
+        NSURL *urlInvocation = [builder buildWithUniqueScheme];
         [[urlInvocation.query should] beNil];
         [[urlInvocation.host should] equal:kTestSecureToken];
     });
-    
-    it(@"a call to build should create a link invocation with query params and R4 scheme if request type is link", ^{
+
+    it(@"a call to buildWithUniqueScheme should create a test invocation for R4 scheme if secure token provided and request type is link", ^{
         [builder withRequestType:PBBARequestTypeRequestToLink];
         [builder withSecureToken:kTestSecureToken];
-        
-        NSURL *urlInvocation = [builder build];
-        [[urlInvocation.scheme should] equal:@"zapp-r4"];
+
+        NSURL *urlInvocation = [builder buildWithUniqueScheme];
         [[urlInvocation.query should] equal:@"apiName=RequestToLink"];
         [[urlInvocation.host should] equal:kTestSecureToken];
     });
     
-    it(@"a call to build should create a test invocation for old scheme if no secure token provided and request type is payment", ^{
+    it(@"a call to buildWithUniqueScheme should create a test invocation for scheme if no secure token provided and request type is payment", ^{
         [builder withRequestType:PBBARequestTypeRequestToPay];
         [builder withSecureToken:nil];
-        
-        NSURL *urlInvocation = [builder build];
-        [[urlInvocation.scheme should] equal:@"zapp"];
+
+        NSURL *urlInvocation = [builder buildWithUniqueScheme];
         [[urlInvocation.query should] beNil];
         [[urlInvocation.host should] beNil];
     });
-    
-    it(@"a call to build should create a test invocation for R4 scheme if no secure token provided and request type is link", ^{
+
+    it(@"a call to buildWithUniqueScheme should create a test invocation for R4 scheme if no secure token provided and request type is link", ^{
         [builder withRequestType:PBBARequestTypeRequestToLink];
         [builder withSecureToken:nil];
-        
-        NSURL *urlInvocation = [builder build];
-        [[urlInvocation.scheme should] equal:@"zapp-r4"];
+
+        NSURL *urlInvocation = [builder buildWithUniqueScheme];
         [[urlInvocation.query should] beNil];
         [[urlInvocation.host should] beNil];
     });

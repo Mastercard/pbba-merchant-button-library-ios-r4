@@ -40,11 +40,15 @@ static NSString* PBBALogosSorageLink = @"https://paybybankappcdn.mastercard.co.u
     }
     
     NSError *error = nil;
-    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-    if (data) {
-        NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-        block(array ? array : nil, error ? error : nil);
-    } else block(nil,[NSError errorWithDomain:@"No URL contents" code:404 userInfo:@{NSLocalizedDescriptionKey:@"URL does not contain any data"}]);
+
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (data) {
+            NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+            block(array ? array : nil, error ? error : nil);
+        } else block(nil,[NSError errorWithDomain:@"No URL contents" code:404 userInfo:@{NSLocalizedDescriptionKey:@"URL does not contain any data"}]);
+      }];
+
+      [task resume];
 }
 
         

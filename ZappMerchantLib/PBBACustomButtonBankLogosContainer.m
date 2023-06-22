@@ -80,12 +80,20 @@
     [super drawRect:rect];
     _availabilityLabel.text = PBBALocalizedString(@"com.zapp.moreAboutPopup.logosContainerAvailability");
     
-    if (self.logosService.nrOfLogos > 0){
-        [self loadLayoutForImages:self.logosService.smallLogos];
-    } else {
-        self.hidden = YES;
-        NSLog(@"PBBABankLogosContainer : No images to show");
-    }
+    
+    self.logosService =  [[PBBABankLogosService alloc] initLogosServiceWithSuccessBlock:^(NSArray<PBBABankLogo *> *logos) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (self.logosService.nrOfLogos > 0){
+                [self loadLayoutForImages:self.logosService.smallLogos];
+            } else {
+                self.hidden = YES;
+//                NSLog(@"PBBABankLogosContainer : No images to show");
+            }
+        });
+    } errorBlock:^(NSError *error) {
+       
+    }];
+    
 }
 
 - (void)setLogosService:(PBBABankLogosService *)logosService {

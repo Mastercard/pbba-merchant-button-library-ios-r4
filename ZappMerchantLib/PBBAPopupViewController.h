@@ -22,6 +22,8 @@
 #import <Foundation/Foundation.h>
 #import "PBBATypes.h"
 #import "PBBAUIElementAppearance.h"
+#import "PBBAPopupCoordinator.h"
+#import "PBBAPopupContainerController.h"
 
 @class PBBAPopupViewController, PBBABankLogosService;
 
@@ -124,6 +126,10 @@
  */
 @property (nullable, nonatomic, weak) id<PBBAPopupViewControllerDelegate> delegate;
 
+@property (nonatomic, strong) PBBAPopupCoordinator * _Nullable popupCoordinator;
+
+@property (nonatomic, strong) PBBAPopupContainerController * _Nullable containerViewController;
+
 /**
  *  Create an instance of PBBA popup view controller.
  *
@@ -186,3 +192,5 @@
 
 
 @end
+
+

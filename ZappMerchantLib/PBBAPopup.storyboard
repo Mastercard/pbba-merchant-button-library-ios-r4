@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="2064" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDC-CF-uq6" userLabel="Header">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="57"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pbba-logo-black-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="SnV-bU-zFE">
                                         <rect key="frame" x="95" y="5" width="130" height="23"/>
@@ -156,7 +156,7 @@
                                 </variation>
                             </view>
                             <containerView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uw6-hm-TbD">
-                                <rect key="frame" x="0.0" y="57" width="320" height="393"/>
+                                <rect key="frame" x="0.0" y="77" width="320" height="373"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUT-Cn-K5O" userLabel="Footer">
@@ -1068,26 +1068,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX2-bP-HwU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYN-1e-7ea" userLabel="Holder View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                         <subviews>
                                             <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feM-9r-wav" userLabel="Step 1,2 holder View">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkt-uK-Fi4" userLabel="Step 1 View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="192"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="184"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step_1_phone_banks" translatesAutoresizingMaskIntoConstraints="NO" id="rjR-po-xfR">
-                                                                <rect key="frame" x="42.5" y="0.0" width="75" height="140"/>
+                                                                <rect key="frame" x="42.5" y="0.0" width="75" height="134.5"/>
                                                                 <accessibility key="accessibilityConfiguration" label="step 1">
                                                                     <accessibilityTraits key="traits" none="YES"/>
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mar-c1-Mog">
-                                                                <rect key="frame" x="16" y="152.5" width="144" height="38.5"/>
+                                                                <rect key="frame" x="16" y="147" width="144" height="36.5"/>
                                                                 <string key="text">Log in to your mobile 
 banking app.</string>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
@@ -1153,21 +1153,21 @@ banking app.</string>
                                                         </variation>
                                                     </view>
                                                     <view clipsSubviews="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILN-Ru-WDL" userLabel="Step 2 View">
-                                                        <rect key="frame" x="160" y="0.0" width="160" height="192"/>
+                                                        <rect key="frame" x="160" y="0.0" width="160" height="184"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step_2_phone_menu" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-0Z-k5d">
-                                                                <rect key="frame" x="42.5" y="0.0" width="75" height="140"/>
+                                                                <rect key="frame" x="42.5" y="0.0" width="75" height="134.5"/>
                                                                 <accessibility key="accessibilityConfiguration" label="step 2">
                                                                     <accessibilityTraits key="traits" none="YES"/>
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROf-aT-jiK">
-                                                                <rect key="frame" x="24" y="152.5" width="128" height="38.5"/>
+                                                                <rect key="frame" x="24" y="147" width="128" height="36.5"/>
                                                                 <string key="text">Find the Pay by Bank 
 app option.</string>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="highlightedColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </label>
                                                         </subviews>
@@ -1344,7 +1344,7 @@ app option.</string>
                                                 </variation>
                                             </view>
                                             <view verifyAmbiguity="off" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rab-bL-xCy" userLabel="Step 3 holder view">
-                                                <rect key="frame" x="0.0" y="207" width="320" height="130"/>
+                                                <rect key="frame" x="0.0" y="199" width="320" height="124.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-dG-l6m" userLabel="Top View">
                                                         <rect key="frame" x="43" y="0.0" width="234" height="105"/>
@@ -1559,7 +1559,7 @@ app option.</string>
                                                         </variation>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the above code to securely link your account." textAlignment="center" lineBreakMode="clip" numberOfLines="2" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ny-D3-kBO">
-                                                        <rect key="frame" x="88" y="117.5" width="160" height="32.5"/>
+                                                        <rect key="frame" x="88" y="117.5" width="160" height="31"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="146" id="54u-Jo-rRc"/>
                                                             <constraint firstAttribute="width" constant="153.5" id="Hf8-z4-gnN"/>
@@ -1742,7 +1742,7 @@ app option.</string>
                                                 </variation>
                                             </view>
                                             <view verifyAmbiguity="off" clipsSubviews="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFl-Gt-3Oa" customClass="PBBABankLogosContainer">
-                                                <rect key="frame" x="0.0" y="338.5" width="320" height="82"/>
+                                                <rect key="frame" x="0.0" y="325" width="320" height="78.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
