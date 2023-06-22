@@ -43,13 +43,13 @@
     NSError *decodingError;
     
     // Decode JWS header
-    NSDictionary *header = [self decodeBase64EncodedStringToJSONDictionary:base64EncodedHeader error:&decodingError];
+    NSDictionary *header = [self decodeBase64EncodedStringToJSONDictionary:[base64EncodedHeader pbba_trim] error:&decodingError];
     
     // Decode JWS payload
-    NSDictionary *payload = [self decodeBase64EncodedStringToJSONDictionary:base64EncodedPayload error:&decodingError];
+    NSDictionary *payload = [self decodeBase64EncodedStringToJSONDictionary:[base64EncodedPayload pbba_trim] error:&decodingError];
     
     // Decode signature
-    NSData *signature = [self decodeBase64EncodedStringToData:base64EncodedSignature error:&decodingError];
+    NSData *signature = [self decodeBase64EncodedStringToData:[base64EncodedSignature pbba_trim] error:&decodingError];
     
     NSString *signingInput = [NSString stringWithFormat:@"%@.%@", base64EncodedHeader, base64EncodedPayload];
                    
