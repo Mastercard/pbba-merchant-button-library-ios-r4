@@ -40,9 +40,83 @@
 		14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
 		14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */; };
 		14C10B561F87DEE600702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; };
+		14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C10B511F87CA9900702936 /* PBBATypes.h */; };
 		14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */; };
+		19B9253B2A1E4EF40060B1D4 /* PBBAAppPickerServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B9253A2A1E4EF40060B1D4 /* PBBAAppPickerServiceTests.m */; };
+		19B9253D2A1E4F1B0060B1D4 /* PBBACertificateTrustServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B9253C2A1E4F1B0060B1D4 /* PBBACertificateTrustServiceTests.m */; };
+		19B925402A1E4F480060B1D4 /* PBBATestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B9253E2A1E4F480060B1D4 /* PBBATestData.m */; };
+		19BBA14A2A1D1E8F0060549E /* NSError+PBBAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA12C2A1D1E840060549E /* NSError+PBBAUtils.m */; };
+		19BBA14B2A1D1E8F0060549E /* PBBAAppPickerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA12D2A1D1E850060549E /* PBBAAppPickerUtils.h */; };
+		19BBA14C2A1D1E8F0060549E /* PBBAAppPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA12E2A1D1E850060549E /* PBBAAppPickerViewController.m */; };
+		19BBA14D2A1D1E8F0060549E /* PBBACryptoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA12F2A1D1E860060549E /* PBBACryptoService.m */; };
+		19BBA14E2A1D1E8F0060549E /* PBBAAppPickerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1302A1D1E860060549E /* PBBAAppPickerAnimator.m */; };
+		19BBA14F2A1D1E8F0060549E /* PBBAJSONWebSignatureService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1312A1D1E860060549E /* PBBAJSONWebSignatureService.h */; };
+		19BBA1502A1D1E8F0060549E /* PBBACertificateTrustService.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1322A1D1E870060549E /* PBBACertificateTrustService.m */; };
+		19BBA1512A1D1E8F0060549E /* PBBAAppPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1332A1D1E870060549E /* PBBAAppPickerViewController.h */; };
+		19BBA1522A1D1E8F0060549E /* PBBACertificateTrustService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1352A1D1E880060549E /* PBBACertificateTrustService.h */; };
+		19BBA1532A1D1E8F0060549E /* PBBAAppPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1362A1D1E880060549E /* PBBAAppPickerItem.h */; };
+		19BBA1542A1D1E8F0060549E /* PBBAAppPickerItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1372A1D1E880060549E /* PBBAAppPickerItemCell.h */; };
+		19BBA1552A1D1E8F0060549E /* PBBAAppPickerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1382A1D1E890060549E /* PBBAAppPickerConfiguration.m */; };
+		19BBA1562A1D1E8F0060549E /* PBBAAppPickerService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1392A1D1E890060549E /* PBBAAppPickerService.h */; };
+		19BBA1572A1D1E8F0060549E /* PBBAAppPickerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13A2A1D1E8A0060549E /* PBBAAppPickerConfiguration.h */; };
+		19BBA1582A1D1E8F0060549E /* NSString+PBBAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA13B2A1D1E8A0060549E /* NSString+PBBAUtils.m */; };
+		19BBA1592A1D1E8F0060549E /* PBBAGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13C2A1D1E8A0060549E /* PBBAGradientView.h */; };
+		19BBA15A2A1D1E8F0060549E /* NSError+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13D2A1D1E8B0060549E /* NSError+PBBAUtils.h */; };
+		19BBA15B2A1D1E8F0060549E /* PBBAAppPickerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA13E2A1D1E8B0060549E /* PBBAAppPickerUtils.m */; };
+		19BBA15C2A1D1E8F0060549E /* PBBAAppPickerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA13F2A1D1E8B0060549E /* PBBAAppPickerItemCell.m */; };
+		19BBA15D2A1D1E8F0060549E /* PBBAGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1402A1D1E8C0060549E /* PBBAGradientView.m */; };
+		19BBA15E2A1D1E8F0060549E /* PBBAAppPickerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1412A1D1E8C0060549E /* PBBAAppPickerAnimator.h */; };
+		19BBA15F2A1D1E8F0060549E /* NSString+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1422A1D1E8D0060549E /* NSString+PBBAUtils.h */; };
+		19BBA1602A1D1E8F0060549E /* PBBAAppPickerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1432A1D1E8D0060549E /* PBBAAppPickerService.m */; };
+		19BBA1612A1D1E8F0060549E /* NSBundle+PBBAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1442A1D1E8D0060549E /* NSBundle+PBBAUtils.m */; };
+		19BBA1622A1D1E8F0060549E /* PBBACryptoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1452A1D1E8E0060549E /* PBBACryptoService.h */; };
+		19BBA1632A1D1E8F0060549E /* NSBundle+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1462A1D1E8E0060549E /* NSBundle+PBBAUtils.h */; };
+		19BBA1642A1D1E8F0060549E /* PBBAAppPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1482A1D1E8F0060549E /* PBBAAppPickerItem.m */; };
+		19BBA1652A1D1E8F0060549E /* PBBAJSONWebSignatureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BBA1492A1D1E8F0060549E /* PBBAJSONWebSignatureService.m */; };
+		19BBA1662A1D20270060549E /* PBBAAppPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BBA1342A1D1E870060549E /* PBBAAppPickerViewController.xib */; };
+		19BBA1672A1D20320060549E /* PBBAAppPickerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BBA1472A1D1E8E0060549E /* PBBAAppPickerItemCell.xib */; };
+		19D12AAF2A1E5653006791E5 /* PBBAJSONWebSignatureServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D12AAE2A1E5653006791E5 /* PBBAJSONWebSignatureServiceTests.m */; };
+		19D12ABD2A1E5707006791E5 /* test-ca-chain-invalid-2.cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB12A1E5702006791E5 /* test-ca-chain-invalid-2.cert.pem */; };
+		19D12ABE2A1E5707006791E5 /* test-leaf.cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB22A1E5702006791E5 /* test-leaf.cert.der */; };
+		19D12ABF2A1E5707006791E5 /* test-jws-strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB32A1E5703006791E5 /* test-jws-strings.strings */; };
+		19D12AC02A1E5707006791E5 /* test-self-signed-2.cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB42A1E5703006791E5 /* test-self-signed-2.cert.der */; };
+		19D12AC12A1E5707006791E5 /* test-pbba-app-picker-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB52A1E5704006791E5 /* test-pbba-app-picker-manifest.json */; };
+		19D12AC22A1E5707006791E5 /* test-ca-chain-invalid.cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB62A1E5704006791E5 /* test-ca-chain-invalid.cert.pem */; };
+		19D12AC32A1E5707006791E5 /* test-ca.cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB72A1E5705006791E5 /* test-ca.cert.der */; };
+		19D12AC42A1E5707006791E5 /* test-chain.cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB82A1E5705006791E5 /* test-chain.cert.pem */; };
+		19D12AC52A1E5707006791E5 /* test-ca-root.cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 19D12AB92A1E5706006791E5 /* test-ca-root.cert.der */; };
+		19D12AC62A1E5707006791E5 /* test-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 19D12ABA2A1E5706006791E5 /* test-app-icon.png */; };
+		19D12AC72A1E5707006791E5 /* test-chain-2.cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 19D12ABB2A1E5707006791E5 /* test-chain-2.cert.pem */; };
+		19D12AC82A1E5707006791E5 /* test-self-signed.cert.der in Resources */ = {isa = PBXBuildFile; fileRef = 19D12ABC2A1E5707006791E5 /* test-self-signed.cert.der */; };
+		19D12ACA2A1E5734006791E5 /* PBBACryptoServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D12AC92A1E5733006791E5 /* PBBACryptoServiceTests.m */; };
+		19DE8D782A2DD9DF002C183F /* NSBundle+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1462A1D1E8E0060549E /* NSBundle+PBBAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D792A2DD9EF002C183F /* NSString+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1422A1D1E8D0060549E /* NSString+PBBAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7A2A2DD9EF002C183F /* NSError+PBBAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13D2A1D1E8B0060549E /* NSError+PBBAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7B2A2DDA00002C183F /* PBBAAppPickerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA12D2A1D1E850060549E /* PBBAAppPickerUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7C2A2DDA07002C183F /* PBBAAppPickerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1362A1D1E880060549E /* PBBAAppPickerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7D2A2DDA16002C183F /* PBBAAppPickerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13A2A1D1E8A0060549E /* PBBAAppPickerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7E2A2DDA16002C183F /* PBBACryptoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1452A1D1E8E0060549E /* PBBACryptoService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D7F2A2DDA16002C183F /* PBBAAppPickerService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1392A1D1E890060549E /* PBBAAppPickerService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D802A2DDA16002C183F /* PBBAJSONWebSignatureService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1312A1D1E860060549E /* PBBAJSONWebSignatureService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D812A2DDA16002C183F /* PBBACertificateTrustService.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1352A1D1E880060549E /* PBBACertificateTrustService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D822A2DDA23002C183F /* PBBAAppPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1332A1D1E870060549E /* PBBAAppPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D832A2DDA23002C183F /* PBBAAppPickerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1412A1D1E8C0060549E /* PBBAAppPickerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D842A2DDA2E002C183F /* PBBAAppPickerItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA1372A1D1E880060549E /* PBBAAppPickerItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D852A2DDA2E002C183F /* PBBAGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BBA13C2A1D1E8A0060549E /* PBBAGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D862A2DDA7C002C183F /* PBBAPopupContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB25F218B259D005FF72A /* PBBAPopupContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D872A2DDAAB002C183F /* PBBAErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB266218B32ED005FF72A /* PBBAErrorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D882A2DDAAB002C183F /* PBBAMoreAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA851302149276000B4556F /* PBBAMoreAboutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D892A2DDAB6002C183F /* PBBABankLogosContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA8512F2149276000B4556F /* PBBABankLogosContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8A2A2DDAC0002C183F /* PBBAButtonMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89CD216DCEAE005B580E /* PBBAButtonMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8B2A2DDACC002C183F /* PBBACustomButtonBankLogosContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FC5E2D21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8C2A2DDACC002C183F /* PBBACustomButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FC5E1221AC1D1A000625F6 /* PBBACustomButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8D2A2DDAD2002C183F /* PBBACustomUXConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 043C9DA2215946F7002E9162 /* PBBACustomUXConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8E2A2DDAE7002C183F /* NSError+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3AB26A218B49F0005FF72A /* NSError+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D8F2A2DDAFC002C183F /* PBBAExpiryTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC78D6F21763DAB00405FF3 /* PBBAExpiryTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D902A2DDB07002C183F /* PBBABankLogosService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D9216DD3C7005B580E /* PBBABankLogosService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D912A2DDB07002C183F /* PBBANetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D7216DD3C6005B580E /* PBBANetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE8D922A2DDB0E002C183F /* PBBABankLogo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8D89D4216DD3C6005B580E /* PBBABankLogo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AF003B21B8DEE4F007C7980 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AF003B01B8DEB9B007C7980 /* Localizable.strings */; };
 		744148916F89CDBD1AEF0D3D /* libPods-ZappMerchantLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D861D4DC033ECC43D19F83F /* libPods-ZappMerchantLibTests.a */; };
 		8A3AB260218B259D005FF72A /* PBBAPopupContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AB25E218B259D005FF72A /* PBBAPopupContentViewController.m */; };
@@ -100,20 +174,20 @@
 		CD3A0B3C18D75C4C002994E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A0B3B18D75C4C002994E4 /* UIKit.framework */; };
 		CD3BBEA11C90607D0096B732 /* PBBAPopupCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */; };
 		CD3BBEA21C90607D0096B732 /* PBBAPopupCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3BBEA01C90607D0096B732 /* PBBAPopupCoordinator.m */; };
-		CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */; };
-		CD3E3CE61D25375600EB58EB /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */; };
-		CD3E3CE91D25375600EB58EB /* PBBAAutoLoadableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */; };
-		CD3E3CED1D25375600EB58EB /* PBBAPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */; };
-		CD3E3CEE1D25375600EB58EB /* PBBAPopupContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */; };
-		CD3E3CF11D25375600EB58EB /* PBBAMComViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2176191D24273000DA032D /* PBBAMComViewController.h */; };
+		CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3E3CE61D25375600EB58EB /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7444F31D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3E3CE91D25375600EB58EB /* PBBAAutoLoadableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3E3CED1D25375600EB58EB /* PBBAPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF165A01D241D7D00E70873 /* PBBAPopupButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3E3CEE1D25375600EB58EB /* PBBAPopupContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3E3CF11D25375600EB58EB /* PBBAMComViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2176191D24273000DA032D /* PBBAMComViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3F2B9C1D23FA27008A5D0D /* PBBAPopupAnimator.h */; };
 		CD3F2B9F1D23FA27008A5D0D /* PBBAPopupAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F2B9D1D23FA27008A5D0D /* PBBAPopupAnimator.m */; };
 		CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */; };
 		CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43B70C1CFDCE3800A85880 /* PBBAAnimatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD43B7161CFDCEA400A85880 /* UIView+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */; };
-		CD43B7191CFDCEA400A85880 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */; };
+		CD43B7161CFDCEA400A85880 /* UIView+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE5F1C8847BB00F27CC2 /* UIView+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43B7191CFDCEA400A85880 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE4C1C88409000F27CC2 /* PBBAPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD43B7211CFDCEA400A85880 /* PBBAPopupCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */; };
+		CD43B7211CFDCEA400A85880 /* PBBAPopupCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3BBE9F1C90607D0096B732 /* PBBAPopupCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD493C5F1D2418C700FC3E5A /* PBBAAutoLoadableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD493C5D1D2418C700FC3E5A /* PBBAAutoLoadableView.h */; };
 		CD493C601D2418C700FC3E5A /* PBBAAutoLoadableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD493C5E1D2418C700FC3E5A /* PBBAAutoLoadableView.m */; };
 		CD63787D1D2FF6AF0073D14F /* PBBAAppUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD63787C1D2FF6AF0073D14F /* PBBAAppUtilsTests.m */; };
@@ -128,21 +202,21 @@
 		CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CCE811C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h */; };
 		CD8CCE841C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8CCE821C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m */; };
 		CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDC6E191B4AC8FE0000E10C /* PBBAUIElementAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD8F889F1BB5A12000E754B6 /* NSAttributedString+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */; };
-		CD8F88A01BB5A12000E754B6 /* NSBundle+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */; };
-		CD8F88A21BB5A12000E754B6 /* UIColor+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */; };
-		CD8F88A41BB5A12000E754B6 /* UIFont+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */; };
-		CD8F88A51BB5A12000E754B6 /* UIImage+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */; };
-		CD8F88B11BB5A12000E754B6 /* PBBACodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = C818C1D81B5653CC00A7514A /* PBBACodeView.h */; };
+		CD8F889F1BB5A12000E754B6 /* NSAttributedString+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FE199A4A90008A082A /* NSAttributedString+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88A01BB5A12000E754B6 /* NSBundle+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A0B3E18D7659B002994E4 /* NSBundle+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88A21BB5A12000E754B6 /* UIColor+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F14E72FC199A546100818A7C /* UIColor+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88A41BB5A12000E754B6 /* UIFont+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD988FB199A342E008A082A /* UIFont+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88A51BB5A12000E754B6 /* UIImage+ZPMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D12A8319640BE30064590B /* UIImage+ZPMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8F88B11BB5A12000E754B6 /* PBBACodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = C818C1D81B5653CC00A7514A /* PBBACodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC4374518D306E8004DBB05 /* PBBAButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; };
+		CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB9274C1B57AC6700A8EDFD /* PBBASquiggleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A76635D4188D3AB300D6C26C /* ZappMerchantLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; };
 		CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FDE1D214C9D00D207EF /* PBBAAppUtils.m */; };
 		CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
 		CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9C6FE21D214F7A00D207EF /* PBBALibraryUtils.m */; };
 		CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FDD1D214C9D00D207EF /* PBBAAppUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD9C6FF21D21767200D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; };
+		CD9C6FF21D21767200D207EF /* PBBALibraryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9C6FE11D214F7A00D207EF /* PBBALibraryUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDB9274E1B57AC6700A8EDFD /* PBBASquiggleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB9274D1B57AC6700A8EDFD /* PBBASquiggleView.m */; };
 		CDBC35131D2424BB00B5A235 /* PBBAPopupContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBC35111D2424BB00B5A235 /* PBBAPopupContainerController.h */; };
 		CDBC35141D2424BB00B5A235 /* PBBAPopupContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC35121D2424BB00B5A235 /* PBBAPopupContainerController.m */; };
@@ -206,6 +280,54 @@
 		14C10B521F87DED400702936 /* PBBAInvocationURLBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBAInvocationURLBuilder.h; sourceTree = "<group>"; };
 		14C10B531F87DED400702936 /* PBBAInvocationURLBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilder.m; sourceTree = "<group>"; };
 		14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBBAInvocationURLBuilderTests.m; sourceTree = "<group>"; };
+		19B9253A2A1E4EF40060B1D4 /* PBBAAppPickerServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerServiceTests.m; sourceTree = "<group>"; };
+		19B9253C2A1E4F1B0060B1D4 /* PBBACertificateTrustServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACertificateTrustServiceTests.m; sourceTree = "<group>"; };
+		19B9253E2A1E4F480060B1D4 /* PBBATestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBATestData.m; sourceTree = "<group>"; };
+		19B9253F2A1E4F480060B1D4 /* PBBATestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBATestData.h; sourceTree = "<group>"; };
+		19BBA12C2A1D1E840060549E /* NSError+PBBAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+PBBAUtils.m"; sourceTree = "<group>"; };
+		19BBA12D2A1D1E850060549E /* PBBAAppPickerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerUtils.h; sourceTree = "<group>"; };
+		19BBA12E2A1D1E850060549E /* PBBAAppPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerViewController.m; sourceTree = "<group>"; };
+		19BBA12F2A1D1E860060549E /* PBBACryptoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACryptoService.m; sourceTree = "<group>"; };
+		19BBA1302A1D1E860060549E /* PBBAAppPickerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerAnimator.m; sourceTree = "<group>"; };
+		19BBA1312A1D1E860060549E /* PBBAJSONWebSignatureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAJSONWebSignatureService.h; sourceTree = "<group>"; };
+		19BBA1322A1D1E870060549E /* PBBACertificateTrustService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACertificateTrustService.m; sourceTree = "<group>"; };
+		19BBA1332A1D1E870060549E /* PBBAAppPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerViewController.h; sourceTree = "<group>"; };
+		19BBA1342A1D1E870060549E /* PBBAAppPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBAAppPickerViewController.xib; sourceTree = "<group>"; };
+		19BBA1352A1D1E880060549E /* PBBACertificateTrustService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBACertificateTrustService.h; sourceTree = "<group>"; };
+		19BBA1362A1D1E880060549E /* PBBAAppPickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerItem.h; sourceTree = "<group>"; };
+		19BBA1372A1D1E880060549E /* PBBAAppPickerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerItemCell.h; sourceTree = "<group>"; };
+		19BBA1382A1D1E890060549E /* PBBAAppPickerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerConfiguration.m; sourceTree = "<group>"; };
+		19BBA1392A1D1E890060549E /* PBBAAppPickerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerService.h; sourceTree = "<group>"; };
+		19BBA13A2A1D1E8A0060549E /* PBBAAppPickerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerConfiguration.h; sourceTree = "<group>"; };
+		19BBA13B2A1D1E8A0060549E /* NSString+PBBAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PBBAUtils.m"; sourceTree = "<group>"; };
+		19BBA13C2A1D1E8A0060549E /* PBBAGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAGradientView.h; sourceTree = "<group>"; };
+		19BBA13D2A1D1E8B0060549E /* NSError+PBBAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+PBBAUtils.h"; sourceTree = "<group>"; };
+		19BBA13E2A1D1E8B0060549E /* PBBAAppPickerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerUtils.m; sourceTree = "<group>"; };
+		19BBA13F2A1D1E8B0060549E /* PBBAAppPickerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerItemCell.m; sourceTree = "<group>"; };
+		19BBA1402A1D1E8C0060549E /* PBBAGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAGradientView.m; sourceTree = "<group>"; };
+		19BBA1412A1D1E8C0060549E /* PBBAAppPickerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBAAppPickerAnimator.h; sourceTree = "<group>"; };
+		19BBA1422A1D1E8D0060549E /* NSString+PBBAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PBBAUtils.h"; sourceTree = "<group>"; };
+		19BBA1432A1D1E8D0060549E /* PBBAAppPickerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerService.m; sourceTree = "<group>"; };
+		19BBA1442A1D1E8D0060549E /* NSBundle+PBBAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PBBAUtils.m"; sourceTree = "<group>"; };
+		19BBA1452A1D1E8E0060549E /* PBBACryptoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBACryptoService.h; sourceTree = "<group>"; };
+		19BBA1462A1D1E8E0060549E /* NSBundle+PBBAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PBBAUtils.h"; sourceTree = "<group>"; };
+		19BBA1472A1D1E8E0060549E /* PBBAAppPickerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBBAAppPickerItemCell.xib; sourceTree = "<group>"; };
+		19BBA1482A1D1E8F0060549E /* PBBAAppPickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAAppPickerItem.m; sourceTree = "<group>"; };
+		19BBA1492A1D1E8F0060549E /* PBBAJSONWebSignatureService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAJSONWebSignatureService.m; sourceTree = "<group>"; };
+		19D12AAE2A1E5653006791E5 /* PBBAJSONWebSignatureServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBAJSONWebSignatureServiceTests.m; sourceTree = "<group>"; };
+		19D12AB12A1E5702006791E5 /* test-ca-chain-invalid-2.cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-ca-chain-invalid-2.cert.pem"; sourceTree = "<group>"; };
+		19D12AB22A1E5702006791E5 /* test-leaf.cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-leaf.cert.der"; sourceTree = "<group>"; };
+		19D12AB32A1E5703006791E5 /* test-jws-strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "test-jws-strings.strings"; sourceTree = "<group>"; };
+		19D12AB42A1E5703006791E5 /* test-self-signed-2.cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-self-signed-2.cert.der"; sourceTree = "<group>"; };
+		19D12AB52A1E5704006791E5 /* test-pbba-app-picker-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-pbba-app-picker-manifest.json"; sourceTree = "<group>"; };
+		19D12AB62A1E5704006791E5 /* test-ca-chain-invalid.cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-ca-chain-invalid.cert.pem"; sourceTree = "<group>"; };
+		19D12AB72A1E5705006791E5 /* test-ca.cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-ca.cert.der"; sourceTree = "<group>"; };
+		19D12AB82A1E5705006791E5 /* test-chain.cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-chain.cert.pem"; sourceTree = "<group>"; };
+		19D12AB92A1E5706006791E5 /* test-ca-root.cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-ca-root.cert.der"; sourceTree = "<group>"; };
+		19D12ABA2A1E5706006791E5 /* test-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test-app-icon.png"; sourceTree = "<group>"; };
+		19D12ABB2A1E5707006791E5 /* test-chain-2.cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-chain-2.cert.pem"; sourceTree = "<group>"; };
+		19D12ABC2A1E5707006791E5 /* test-self-signed.cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-self-signed.cert.der"; sourceTree = "<group>"; };
+		19D12AC92A1E5733006791E5 /* PBBACryptoServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBACryptoServiceTests.m; sourceTree = "<group>"; };
 		5AF003B01B8DEB9B007C7980 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		69880497BC0F436956D58E21 /* Pods-ZappMerchantLibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7743DFBF8A632ACF2F874AF4 /* Pods-ZappMerchantLibTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappMerchantLibTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests.development.xcconfig"; sourceTree = "<group>"; };
@@ -361,6 +483,110 @@
 			name = CustomButton;
 			sourceTree = "<group>";
 		};
+		19BBA12B2A1D1E4B0060549E /* ZappAppPickerLib */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA16B2A1E1D590060549E /* Categories */,
+				19BBA16C2A1E1DA20060549E /* Utils */,
+				19BBA16D2A1E1DD00060549E /* Models */,
+				19BBA16E2A1E1DE90060549E /* Services */,
+				19BBA16F2A1E1E2D0060549E /* Controllers */,
+				19BBA1702A1E1E550060549E /* Views */,
+			);
+			name = ZappAppPickerLib;
+			sourceTree = "<group>";
+		};
+		19BBA16B2A1E1D590060549E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA1462A1D1E8E0060549E /* NSBundle+PBBAUtils.h */,
+				19BBA1442A1D1E8D0060549E /* NSBundle+PBBAUtils.m */,
+				19BBA13D2A1D1E8B0060549E /* NSError+PBBAUtils.h */,
+				19BBA12C2A1D1E840060549E /* NSError+PBBAUtils.m */,
+				19BBA1422A1D1E8D0060549E /* NSString+PBBAUtils.h */,
+				19BBA13B2A1D1E8A0060549E /* NSString+PBBAUtils.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		19BBA16C2A1E1DA20060549E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA12D2A1D1E850060549E /* PBBAAppPickerUtils.h */,
+				19BBA13E2A1D1E8B0060549E /* PBBAAppPickerUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		19BBA16D2A1E1DD00060549E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA1362A1D1E880060549E /* PBBAAppPickerItem.h */,
+				19BBA1482A1D1E8F0060549E /* PBBAAppPickerItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		19BBA16E2A1E1DE90060549E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA13A2A1D1E8A0060549E /* PBBAAppPickerConfiguration.h */,
+				19BBA1382A1D1E890060549E /* PBBAAppPickerConfiguration.m */,
+				19BBA1392A1D1E890060549E /* PBBAAppPickerService.h */,
+				19BBA1432A1D1E8D0060549E /* PBBAAppPickerService.m */,
+				19BBA1352A1D1E880060549E /* PBBACertificateTrustService.h */,
+				19BBA1322A1D1E870060549E /* PBBACertificateTrustService.m */,
+				19BBA1452A1D1E8E0060549E /* PBBACryptoService.h */,
+				19BBA12F2A1D1E860060549E /* PBBACryptoService.m */,
+				19BBA1312A1D1E860060549E /* PBBAJSONWebSignatureService.h */,
+				19BBA1492A1D1E8F0060549E /* PBBAJSONWebSignatureService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		19BBA16F2A1E1E2D0060549E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA1412A1D1E8C0060549E /* PBBAAppPickerAnimator.h */,
+				19BBA1302A1D1E860060549E /* PBBAAppPickerAnimator.m */,
+				19BBA1332A1D1E870060549E /* PBBAAppPickerViewController.h */,
+				19BBA12E2A1D1E850060549E /* PBBAAppPickerViewController.m */,
+				19BBA1342A1D1E870060549E /* PBBAAppPickerViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		19BBA1702A1E1E550060549E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19BBA1372A1D1E880060549E /* PBBAAppPickerItemCell.h */,
+				19BBA13F2A1D1E8B0060549E /* PBBAAppPickerItemCell.m */,
+				19BBA1472A1D1E8E0060549E /* PBBAAppPickerItemCell.xib */,
+				19BBA13C2A1D1E8A0060549E /* PBBAGradientView.h */,
+				19BBA1402A1D1E8C0060549E /* PBBAGradientView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		19D12AB02A1E56F2006791E5 /* Test Assets */ = {
+			isa = PBXGroup;
+			children = (
+				19D12ABA2A1E5706006791E5 /* test-app-icon.png */,
+				19D12AB12A1E5702006791E5 /* test-ca-chain-invalid-2.cert.pem */,
+				19D12AB62A1E5704006791E5 /* test-ca-chain-invalid.cert.pem */,
+				19D12AB92A1E5706006791E5 /* test-ca-root.cert.der */,
+				19D12AB72A1E5705006791E5 /* test-ca.cert.der */,
+				19D12ABB2A1E5707006791E5 /* test-chain-2.cert.pem */,
+				19D12AB82A1E5705006791E5 /* test-chain.cert.pem */,
+				19D12AB32A1E5703006791E5 /* test-jws-strings.strings */,
+				19D12AB22A1E5702006791E5 /* test-leaf.cert.der */,
+				19D12AB52A1E5704006791E5 /* test-pbba-app-picker-manifest.json */,
+				19D12AB42A1E5703006791E5 /* test-self-signed-2.cert.der */,
+				19D12ABC2A1E5707006791E5 /* test-self-signed.cert.der */,
+			);
+			name = "Test Assets";
+			sourceTree = "<group>";
+		};
 		61DF66CE63B7A108B224F0A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +677,7 @@
 		A76635D1188D3AB300D6C26C /* ZappMerchantLib */ = {
 			isa = PBXGroup;
 			children = (
+				19BBA12B2A1D1E4B0060549E /* ZappAppPickerLib */,
 				8A8D89D3216DCF30005B580E /* Services */,
 				CD15056418D212B10029BE56 /* Utils */,
 				CD12FE011C8EED7A008EC2FA /* Protocols */,
@@ -464,6 +691,7 @@
 		A76635E5188D3AB300D6C26C /* ZappMerchantLibTests */ = {
 			isa = PBXGroup;
 			children = (
+				19D12AB02A1E56F2006791E5 /* Test Assets */,
 				CDCA596D1D354114002308C9 /* Utils */,
 				CD63787B1D2FF68B0073D14F /* Tests */,
 				A76635E6188D3AB300D6C26C /* Supporting Files */,
@@ -542,6 +770,10 @@
 			children = (
 				CD63787C1D2FF6AF0073D14F /* PBBAAppUtilsTests.m */,
 				14C6DDA01F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m */,
+				19B9253A2A1E4EF40060B1D4 /* PBBAAppPickerServiceTests.m */,
+				19B9253C2A1E4F1B0060B1D4 /* PBBACertificateTrustServiceTests.m */,
+				19D12AAE2A1E5653006791E5 /* PBBAJSONWebSignatureServiceTests.m */,
+				19D12AC92A1E5733006791E5 /* PBBACryptoServiceTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -680,6 +912,8 @@
 			isa = PBXGroup;
 			children = (
 				CDCA596C1D35410E002308C9 /* PBBATestEnvironment.h */,
+				19B9253F2A1E4F480060B1D4 /* PBBATestData.h */,
+				19B9253E2A1E4F480060B1D4 /* PBBATestData.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -702,38 +936,52 @@
 			files = (
 				14C10B581F87DEFE00702936 /* PBBATypes.h in Headers */,
 				CD43B7121CFDCE4700A85880 /* PBBAAnimatable.h in Headers */,
+				19BBA1572A1D1E8F0060549E /* PBBAAppPickerConfiguration.h in Headers */,
 				043C9DA4215946F7002E9162 /* PBBACustomUXConfig.h in Headers */,
 				8A8D89DD216DD3C7005B580E /* PBBANetworkService.h in Headers */,
 				CD493C5F1D2418C700FC3E5A /* PBBAAutoLoadableView.h in Headers */,
+				19BBA1562A1D1E8F0060549E /* PBBAAppPickerService.h in Headers */,
 				A2FC5E1421AC1D1A000625F6 /* PBBACustomButton.h in Headers */,
 				8AC78D7121763DAB00405FF3 /* PBBAExpiryTimer.h in Headers */,
 				C81AB9281B6A799600B621A2 /* ZappMerchantLib.h in Headers */,
 				A2FC5E2F21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.h in Headers */,
 				8AA851352149276100B4556F /* PBBABankLogosContainer.h in Headers */,
 				8A8D89D0216DCEAE005B580E /* PBBAButtonMain.h in Headers */,
+				19BBA14F2A1D1E8F0060549E /* PBBAJSONWebSignatureService.h in Headers */,
 				8AA851362149276100B4556F /* PBBAMoreAboutViewController.h in Headers */,
 				14C10B541F87DED400702936 /* PBBAInvocationURLBuilder.h in Headers */,
+				19BBA14B2A1D1E8F0060549E /* PBBAAppPickerUtils.h in Headers */,
 				CD7444F51D23FB5600768225 /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
 				CD9C6FDF1D214C9D00D207EF /* PBBAAppUtils.h in Headers */,
 				C81AB95B1B6A81D500B621A2 /* PBBAUIElementAppearance.h in Headers */,
 				CD3F2B9E1D23FA27008A5D0D /* PBBAPopupAnimator.h in Headers */,
+				19BBA15A2A1D1E8F0060549E /* NSError+PBBAUtils.h in Headers */,
+				19BBA1632A1D1E8F0060549E /* NSBundle+PBBAUtils.h in Headers */,
 				C81AB95D1B6A81D500B621A2 /* PBBACodeView.h in Headers */,
 				8A3AB268218B32ED005FF72A /* PBBAErrorView.h in Headers */,
 				CD8CCE831C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
+				19BBA15F2A1D1E8F0060549E /* NSString+PBBAUtils.h in Headers */,
 				C81AB9621B6A81D500B621A2 /* PBBAButton.h in Headers */,
 				C81AB9631B6A81D500B621A2 /* PBBASquiggleView.h in Headers */,
+				19BBA1542A1D1E8F0060549E /* PBBAAppPickerItemCell.h in Headers */,
 				CD9C6FE31D214F7A00D207EF /* PBBALibraryUtils.h in Headers */,
+				19BBA15E2A1D1E8F0060549E /* PBBAAppPickerAnimator.h in Headers */,
 				CDBC35131D2424BB00B5A235 /* PBBAPopupContainerController.h in Headers */,
+				19BBA1532A1D1E8F0060549E /* PBBAAppPickerItem.h in Headers */,
+				19BBA1522A1D1E8F0060549E /* PBBACertificateTrustService.h in Headers */,
+				19BBA1592A1D1E8F0060549E /* PBBAGradientView.h in Headers */,
 				8A8D89DA216DD3C7005B580E /* PBBABankLogo.h in Headers */,
 				8A8D89DF216DD3C7005B580E /* PBBABankLogosService.h in Headers */,
 				CD3BBEA11C90607D0096B732 /* PBBAPopupCoordinator.h in Headers */,
 				CD8CCE4E1C88409000F27CC2 /* PBBAPopupViewController.h in Headers */,
 				8A3AB261218B259D005FF72A /* PBBAPopupContentViewController.h in Headers */,
 				CD8CCE611C8847BB00F27CC2 /* UIView+ZPMLib.h in Headers */,
+				19BBA1622A1D1E8F0060549E /* PBBACryptoService.h in Headers */,
 				C81AB93A1B6A7E9200B621A2 /* NSAttributedString+ZPMLib.h in Headers */,
 				C81AB93B1B6A7E9200B621A2 /* NSBundle+ZPMLib.h in Headers */,
 				C81AB93D1B6A7E9300B621A2 /* UIColor+ZPMLib.h in Headers */,
 				C81AB9401B6A7E9300B621A2 /* UIImage+ZPMLib.h in Headers */,
+				19BBA1512A1D1E8F0060549E /* PBBAAppPickerViewController.h in Headers */,
 				8A3AB26C218B49F0005FF72A /* NSError+ZPMLib.h in Headers */,
 				CDF165A11D241D7D00E70873 /* PBBAPopupButton.h in Headers */,
 				CD21761C1D24273000DA032D /* PBBAMComViewController.h in Headers */,
@@ -745,31 +993,58 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DE8D8F2A2DDAFC002C183F /* PBBAExpiryTimer.h in Headers */,
 				CD8F889B1BB5A12000E754B6 /* PBBAUIElementAppearance.h in Headers */,
 				CD43B71F1CFDCEA400A85880 /* PBBAPopupViewController.h in Headers */,
+				19DE8D822A2DDA23002C183F /* PBBAAppPickerViewController.h in Headers */,
 				CD8F88BD1BB5A12000E754B6 /* ZappMerchantLib.h in Headers */,
 				CD8F88B61BB5A12000E754B6 /* PBBAButton.h in Headers */,
 				CD43B7151CFDCEA400A85880 /* PBBAAnimatable.h in Headers */,
 				14C10B561F87DEE600702936 /* PBBATypes.h in Headers */,
 				CD9C6FF11D21767200D207EF /* PBBAAppUtils.h in Headers */,
+				19DE8D842A2DDA2E002C183F /* PBBAAppPickerItemCell.h in Headers */,
+				19DE8D922A2DDB0E002C183F /* PBBABankLogo.h in Headers */,
+				19DE8D912A2DDB07002C183F /* PBBANetworkService.h in Headers */,
 				14C10B571F87DEE600702936 /* PBBAInvocationURLBuilder.h in Headers */,
+				19DE8D8E2A2DDAE7002C183F /* NSError+ZPMLib.h in Headers */,
 				CD3E3CE51D25375600EB58EB /* PBBAPopupAnimator.h in Headers */,
+				19DE8D832A2DDA23002C183F /* PBBAAppPickerAnimator.h in Headers */,
 				CD3E3CE61D25375600EB58EB /* PBBAPopupScaleAspectFitAnimationContext.h in Headers */,
+				19DE8D792A2DD9EF002C183F /* NSString+PBBAUtils.h in Headers */,
 				CD3E3CE91D25375600EB58EB /* PBBAAutoLoadableView.h in Headers */,
 				CD3E3CED1D25375600EB58EB /* PBBAPopupButton.h in Headers */,
+				19DE8D902A2DDB07002C183F /* PBBABankLogosService.h in Headers */,
+				19DE8D7A2A2DD9EF002C183F /* NSError+PBBAUtils.h in Headers */,
+				19DE8D8B2A2DDACC002C183F /* PBBACustomButtonBankLogosContainer.h in Headers */,
+				19DE8D882A2DDAAB002C183F /* PBBAMoreAboutViewController.h in Headers */,
 				CD3E3CEE1D25375600EB58EB /* PBBAPopupContainerController.h in Headers */,
 				CD3E3CF11D25375600EB58EB /* PBBAMComViewController.h in Headers */,
+				19DE8D7E2A2DDA16002C183F /* PBBACryptoService.h in Headers */,
 				CD9C6FF21D21767200D207EF /* PBBALibraryUtils.h in Headers */,
 				CD43B7161CFDCEA400A85880 /* UIView+ZPMLib.h in Headers */,
+				19DE8D7D2A2DDA16002C183F /* PBBAAppPickerConfiguration.h in Headers */,
+				19DE8D8A2A2DDAC0002C183F /* PBBAButtonMain.h in Headers */,
 				CD43B7191CFDCEA400A85880 /* PBBAPopupContentViewControllerTransitionContext.h in Headers */,
+				19DE8D802A2DDA16002C183F /* PBBAJSONWebSignatureService.h in Headers */,
+				19DE8D852A2DDA2E002C183F /* PBBAGradientView.h in Headers */,
 				CD43B7211CFDCEA400A85880 /* PBBAPopupCoordinator.h in Headers */,
 				CD8F889F1BB5A12000E754B6 /* NSAttributedString+ZPMLib.h in Headers */,
 				CD8F88A01BB5A12000E754B6 /* NSBundle+ZPMLib.h in Headers */,
+				19DE8D8C2A2DDACC002C183F /* PBBACustomButton.h in Headers */,
+				19DE8D8D2A2DDAD2002C183F /* PBBACustomUXConfig.h in Headers */,
+				19DE8D7B2A2DDA00002C183F /* PBBAAppPickerUtils.h in Headers */,
 				CD8F88B11BB5A12000E754B6 /* PBBACodeView.h in Headers */,
+				19DE8D872A2DDAAB002C183F /* PBBAErrorView.h in Headers */,
 				CD8F88B71BB5A12000E754B6 /* PBBASquiggleView.h in Headers */,
+				19DE8D782A2DD9DF002C183F /* NSBundle+PBBAUtils.h in Headers */,
 				CD8F88A21BB5A12000E754B6 /* UIColor+ZPMLib.h in Headers */,
+				19DE8D862A2DDA7C002C183F /* PBBAPopupContentViewController.h in Headers */,
 				CD8F88A41BB5A12000E754B6 /* UIFont+ZPMLib.h in Headers */,
+				19DE8D892A2DDAB6002C183F /* PBBABankLogosContainer.h in Headers */,
+				19DE8D7C2A2DDA07002C183F /* PBBAAppPickerItem.h in Headers */,
 				CD8F88A51BB5A12000E754B6 /* UIImage+ZPMLib.h in Headers */,
+				19DE8D812A2DDA16002C183F /* PBBACertificateTrustService.h in Headers */,
+				19DE8D7F2A2DDA16002C183F /* PBBAAppPickerService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,8 +1077,6 @@
 				A76635D8188D3AB300D6C26C /* Sources */,
 				A76635D9188D3AB300D6C26C /* Frameworks */,
 				A76635DA188D3AB300D6C26C /* Resources */,
-				BC80D90D514F1DCE7C18E5AE /* [CP] Embed Pods Frameworks */,
-				A93A2F21FF59529F737C7C6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -865,6 +1138,10 @@
 					CD8F887A1BB5A0A400E754B6 = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					CDC4373818D305F5004DBB05 = {
+						DevelopmentTeam = FARWN7FEXX;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = A76635C7188D3AB300D6C26C /* Build configuration list for PBXProject "ZappMerchantLib" */;
@@ -896,6 +1173,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D12AC22A1E5707006791E5 /* test-ca-chain-invalid.cert.pem in Resources */,
+				19D12AC42A1E5707006791E5 /* test-chain.cert.pem in Resources */,
+				19D12ABF2A1E5707006791E5 /* test-jws-strings.strings in Resources */,
+				19D12AC02A1E5707006791E5 /* test-self-signed-2.cert.der in Resources */,
+				19D12AC72A1E5707006791E5 /* test-chain-2.cert.pem in Resources */,
+				19D12ABE2A1E5707006791E5 /* test-leaf.cert.der in Resources */,
+				19D12AC12A1E5707006791E5 /* test-pbba-app-picker-manifest.json in Resources */,
+				19D12AC82A1E5707006791E5 /* test-self-signed.cert.der in Resources */,
+				19D12AC52A1E5707006791E5 /* test-ca-root.cert.der in Resources */,
+				19D12ABD2A1E5707006791E5 /* test-ca-chain-invalid-2.cert.pem in Resources */,
+				19D12AC32A1E5707006791E5 /* test-ca.cert.der in Resources */,
+				19D12AC62A1E5707006791E5 /* test-app-icon.png in Resources */,
 				A76635EA188D3AB300D6C26C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -906,6 +1195,7 @@
 			files = (
 				04C376C1216D4C1000E5755A /* PBBAPopup.storyboard in Resources */,
 				A2FC5E1521AC1D36000625F6 /* PBBACustomButton.xib in Resources */,
+				19BBA1662A1D20270060549E /* PBBAAppPickerViewController.xib in Resources */,
 				DF97729929CB5B9C001A815D /* OpenSans-Bold.ttf in Resources */,
 				CD8501501D2426CE00C06582 /* PBBAErrorView.xib in Resources */,
 				CDF165A31D2423AD00E70873 /* PBBACodeView.xib in Resources */,
@@ -920,6 +1210,7 @@
 				8AD714CF219D660C0083C296 /* PBBABankLogosCommonLayout.xib in Resources */,
 				8AA851472149282000B4556F /* PBBABankLogosContainer.xib in Resources */,
 				DF97729A29CB5B9C001A815D /* OpenSans-Regular.ttf in Resources */,
+				19BBA1672A1D20320060549E /* PBBAAppPickerItemCell.xib in Resources */,
 				8A8D89D2216DCEB9005B580E /* PBBAButtonMain.xib in Resources */,
 				DF97729829CB5B9C001A815D /* OpenSans-ExtraBold.ttf in Resources */,
 			);
@@ -928,36 +1219,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A93A2F21FF59529F737C7C6B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC80D90D514F1DCE7C18E5AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappMerchantLibTests/Pods-ZappMerchantLibTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CD06BC481B6BB8BC00BA886C /* Build Framework & Export Products */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -984,7 +1245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\n    exit 0\nfi\n\nexport MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nINPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nOUT_FAT_STATIC_LIB=\"${INPUT_STATIC_LIB}\"\n\nfunction build_static_library {\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    xcrun libtool -static -o \"${3}\" \"${1}\" \"${2}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\n    SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\n    SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Determine the other platform\nif [ \"$SDK_PLATFORM\" == \"iphoneos\" ]; then\n    OTHER_PLATFORM=iphonesimulator\nelse\n    OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SDK_PLATFORM$ ]]; then\n    OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${OTHER_PLATFORM}\"\nelse\n    echo \"Could not find other platform build directory.\"\n    exit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${OTHER_PLATFORM}${SDK_VERSION}\"\n\n# Ensure that we get both i386 and x86_64 platforms\nif [ \"$SDK_PLATFORM\" == \"iphonesimulator\" ]; then\n    build_static_library \"${SDK_NAME}\"\nfi\n\n# Join the libs for both platforms\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${OTHER_BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${BUILT_PRODUCTS_DIR}/${OUT_FAT_STATIC_LIB}\"";
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\n    exit 0\nfi\n\nexport MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nINPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nOUT_FAT_STATIC_LIB=\"${INPUT_STATIC_LIB}\"\n\nfunction build_static_library {\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}/DependentBuilds\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    xcrun libtool -static -o \"${3}\" \"${1}\" \"${2}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\n    SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\n    SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\n# Determine the other platform\nif [ \"$SDK_PLATFORM\" == \"iphoneos\" ]; then\n    OTHER_PLATFORM=iphonesimulator\nelse\n    OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SDK_PLATFORM$ ]]; then\n    OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${OTHER_PLATFORM}\"\nelse\n    echo \"Could not find other platform build directory.\"\n    exit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${OTHER_PLATFORM}${SDK_VERSION}\"\n\n# Ensure that we get both i386 and x86_64 platforms\nif [ \"$SDK_PLATFORM\" == \"iphonesimulator\" ]; then\n    build_static_library \"${SDK_NAME}\"\nfi\n\n# Join the libs for both platforms\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${OTHER_BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${BUILT_PRODUCTS_DIR}/${OUT_FAT_STATIC_LIB}\"\n";
 		};
 		D4DF263E76CF19205ACCDAFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1011,6 +1272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BBA1602A1D1E8F0060549E /* PBBAAppPickerService.m in Sources */,
 				8A3AB260218B259D005FF72A /* PBBAPopupContentViewController.m in Sources */,
 				CD8CCE621C8847BB00F27CC2 /* UIView+ZPMLib.m in Sources */,
 				CDD988FD199A342E008A082A /* UIFont+ZPMLib.m in Sources */,
@@ -1018,7 +1280,9 @@
 				8AA851342149276100B4556F /* PBBABankLogosContainer.m in Sources */,
 				A2FC5E1321AC1D1A000625F6 /* PBBACustomButton.m in Sources */,
 				043C9DA5215946F7002E9162 /* PBBACustomUXConfig.m in Sources */,
+				19BBA14A2A1D1E8F0060549E /* NSError+PBBAUtils.m in Sources */,
 				14C10B551F87DED400702936 /* PBBAInvocationURLBuilder.m in Sources */,
+				19BBA14E2A1D1E8F0060549E /* PBBAAppPickerAnimator.m in Sources */,
 				A2D12A8519640BE30064590B /* UIImage+ZPMLib.m in Sources */,
 				CD9C6FE41D214F7A00D207EF /* PBBALibraryUtils.m in Sources */,
 				CD8CCE4F1C88409000F27CC2 /* PBBAPopupViewController.m in Sources */,
@@ -1029,18 +1293,29 @@
 				8AA851372149276100B4556F /* PBBAMoreAboutViewController.m in Sources */,
 				C84BD0D01B625E1E00B7B1B1 /* PBBACodeView.m in Sources */,
 				CD493C601D2418C700FC3E5A /* PBBAAutoLoadableView.m in Sources */,
+				19BBA15B2A1D1E8F0060549E /* PBBAAppPickerUtils.m in Sources */,
 				CDB9274E1B57AC6700A8EDFD /* PBBASquiggleView.m in Sources */,
+				19BBA1642A1D1E8F0060549E /* PBBAAppPickerItem.m in Sources */,
+				19BBA1652A1D1E8F0060549E /* PBBAJSONWebSignatureService.m in Sources */,
 				8A8D89DC216DD3C7005B580E /* PBBANetworkService.m in Sources */,
 				C88B84EA1B62972B00FEB5A7 /* PBBAButton.m in Sources */,
 				C88DA6D51B70C5E600EAFC81 /* PBBAPopupButton.m in Sources */,
+				19BBA14C2A1D1E8F0060549E /* PBBAAppPickerViewController.m in Sources */,
 				CD8CCE841C889A2F00F27CC2 /* PBBAPopupContentViewControllerTransitionContext.m in Sources */,
+				19BBA15C2A1D1E8F0060549E /* PBBAAppPickerItemCell.m in Sources */,
+				19BBA14D2A1D1E8F0060549E /* PBBACryptoService.m in Sources */,
 				CDD98900199A4A90008A082A /* NSAttributedString+ZPMLib.m in Sources */,
 				C81AB9421B6A7EC200B621A2 /* NSBundle+ZPMLib.m in Sources */,
+				19BBA15D2A1D1E8F0060549E /* PBBAGradientView.m in Sources */,
+				19BBA1612A1D1E8F0060549E /* NSBundle+PBBAUtils.m in Sources */,
+				19BBA1502A1D1E8F0060549E /* PBBACertificateTrustService.m in Sources */,
 				CD21761D1D24273000DA032D /* PBBAMComViewController.m in Sources */,
 				A2FC5E2E21AC42D8000625F6 /* PBBACustomButtonBankLogosContainer.m in Sources */,
+				19BBA1582A1D1E8F0060549E /* NSString+PBBAUtils.m in Sources */,
 				F14E72FE199A546100818A7C /* UIColor+ZPMLib.m in Sources */,
 				CD3BBEA21C90607D0096B732 /* PBBAPopupCoordinator.m in Sources */,
 				8AC78D7221763DAB00405FF3 /* PBBAExpiryTimer.m in Sources */,
+				19BBA1552A1D1E8F0060549E /* PBBAAppPickerConfiguration.m in Sources */,
 				CD9C6FE01D214C9D00D207EF /* PBBAAppUtils.m in Sources */,
 				8A8D89DE216DD3C7005B580E /* PBBABankLogo.m in Sources */,
 				8A3AB269218B32ED005FF72A /* PBBAErrorView.m in Sources */,
@@ -1052,8 +1327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D12AAF2A1E5653006791E5 /* PBBAJSONWebSignatureServiceTests.m in Sources */,
+				19D12ACA2A1E5734006791E5 /* PBBACryptoServiceTests.m in Sources */,
+				19B925402A1E4F480060B1D4 /* PBBATestData.m in Sources */,
 				14C6DDA11F8B9D820029D049 /* PBBAInvocationURLBuilderTests.m in Sources */,
+				19B9253B2A1E4EF40060B1D4 /* PBBAAppPickerServiceTests.m in Sources */,
 				CD63787D1D2FF6AF0073D14F /* PBBAAppUtilsTests.m in Sources */,
+				19B9253D2A1E4F1B0060B1D4 /* PBBACertificateTrustServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1519,8 +1799,12 @@
 		CDA96C461C4E95C5002C64E0 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FARWN7FEXX;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = FARWN7FEXX;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
@@ -1528,7 +1812,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1539,7 +1826,11 @@
 		CDC4374318D305F5004DBB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FARWN7FEXX;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = FARWN7FEXX;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1551,7 +1842,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1562,8 +1856,12 @@
 		CDC4374418D305F5004DBB05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FARWN7FEXX;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = FARWN7FEXX;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "ZappMerchantLibResources/ZappMerchantLibResources-Info.plist";
@@ -1571,7 +1869,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.zapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -24,7 +24,8 @@ Pod::Spec.new do |s|
     "ZappMerchantLib/PBBAPopupViewController.h",
     "ZappMerchantLib/PBBAUIElementAppearance.h",
     "ZappMerchantLib/PBBAAnimatable.h",
-    "ZappMerchantLib/PBBALibraryUtils.h"
+    "ZappMerchantLib/PBBALibraryUtils.h",
+    "ZappMerchantLib/PBBAAppPickerViewController.h"
   ]
 
   s.source_files = "ZappMerchantLib/**/*.{h,m}"

@@ -196,9 +196,8 @@
     }
 }
 
-- (void)openBankingApp
-{
-    [PBBALibraryUtils openBankingApp:self.secureToken requestType:self.requestType];
+- (void)openAppPicker:(NSString *)secureToken requestType:(PBBARequestType)requestType brn:(NSString *)brn expiryInterval:(NSUInteger)expiryInterval presenter:(UIViewController *)presenter {
+    [PBBALibraryUtils openAppPicker:secureToken requestType:requestType brn:brn expiryInterval:expiryInterval presenter:presenter];
 }
 
 - (void)registerCFIAppLaunch

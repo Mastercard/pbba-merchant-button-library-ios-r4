@@ -27,7 +27,9 @@
 - (instancetype)withCustomScheme:(NSString *)customScheme;
 - (instancetype)withSecureToken:(NSString *)secureToken;
 - (instancetype)withRequestType:(PBBARequestType)requestType;
+- (instancetype)withSecureToken:(NSString *)customScheme secureToken:(NSString *)secureToken requestType:(PBBARequestType)requestType;
 
 - (NSURL *)build;
+- (NSURL *)buildWithUniqueScheme;
 
 @end

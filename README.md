@@ -7,6 +7,8 @@ The **Pay by Bank app** Merchant Library for iOS makes it easy for you to add Pa
 The Pay by Bank app (PBBA) iOS Merchant Button supports two different models:
  1. Pay by Bank app Branded iOS Merchant Button with Pay by Bank app pop-up
  2. Pay by Bank app Integrated iOS Merchant Button with Pay by Bank app pop-up
+ 
+Creditor or aggregator app may use this SDK which provides Pay by bank App button functionality. Consumer selects the relevant bank from the list and proceeds with express checkout.
 
 ## Integration and Usage <a name="usage"></a>
 The Merchant Library should be used alongside the Pay by Bank app Developer Guide documentation that is available separately to Participants of Pay by Bank app.

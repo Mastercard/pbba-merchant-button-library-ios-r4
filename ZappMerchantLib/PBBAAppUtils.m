@@ -31,29 +31,29 @@
 
 @implementation PBBAAppUtils
 
-+ (BOOL)isCFIAppAvailable
-{
-    return [self isCFIAppAvailableForRequestType:PBBARequestTypeRequestToPay];
-}
+//+ (BOOL)isCFIAppAvailable
+//{
+//    return [self isCFIAppAvailableForRequestType:PBBARequestTypeRequestToPay];
+//}
 
 + (BOOL)isCFIAppAvailableForRequestType:(PBBARequestType)requestType
 {
     return [PBBALibraryUtils isCFIAppAvailableForRequestType:requestType];
 }
 
-+ (BOOL)openBankingApp:(NSString *)secureToken
-{
-    return [self openBankingApp:secureToken
-                    requestType:PBBARequestTypeRequestToPay];
-}
+//+ (BOOL)openBankingApp:(NSString *)secureToken
+//{
+//    return [self openBankingApp:secureToken
+//                    requestType:PBBARequestTypeRequestToPay];
+//}
 
-+ (BOOL)openBankingApp:(NSString *)secureToken
-           requestType:(PBBARequestType)requestType
-{
-    NSAssert(secureToken, @"[PBBAAppUtils] 'secureToken' is a mandatory parameter.");
-    
-    return [PBBALibraryUtils openBankingApp:secureToken requestType:requestType];
-}
+//+ (BOOL)openBankingApp:(NSString *)secureToken
+//           requestType:(PBBARequestType)requestType
+//{
+//    NSAssert(secureToken, @"[PBBAAppUtils] 'secureToken' is a mandatory parameter.");
+//
+//    return [PBBALibraryUtils openBankingApp:secureToken requestType:requestType];
+//}
 
 //+ (PBBAPopupViewController *)showPBBAPopup:(UIViewController *)presenter
 //                               secureToken:(NSString *)secureToken
@@ -106,9 +106,8 @@
         }
         
         // Launch CFI app and exit early
-        if ([self openBankingApp:secureToken requestType:requestType]) {
-            return nil;
-        }
+        [PBBALibraryUtils openAppPicker:secureToken requestType:requestType brn:brn expiryInterval:expiryInterval presenter:presenter];
+        return nil;
     }
     // Update the already presented instance of PBBAPopupViewController instead of recreating it
     if ([presenter.presentedViewController isKindOfClass:[PBBAPopupViewController class]]) {
@@ -126,6 +125,8 @@
     PBBAPopupViewController *pbbaPopupVC = [self instantiateControllerFromStoryboard:@"PBBAPopup" forIdentifier:@"PBBAPopupViewController"];
     pbbaPopupVC.expiryInterval = expiryInterval;
     [pbbaPopupVC setSecureToken:secureToken brn:brn requestType:requestType delegate:delegate];
+    pbbaPopupVC.popupCoordinator.presenter = presenter;
+    pbbaPopupVC.popupCoordinator.expiryInterval = expiryInterval;
 
 /*
  TODO : add implementation for requestType param...

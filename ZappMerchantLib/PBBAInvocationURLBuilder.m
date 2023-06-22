@@ -114,4 +114,27 @@ static NSString * const kAPINameRequestToLinkAndPay = @"RequestToLinkAndPay";
     return [NSURLQueryItem queryItemWithName:@"apiName" value:apiName];
 }
 
+- (instancetype)withSecureToken:(NSString *)customScheme secureToken:(NSString *)secureToken requestType:(PBBARequestType)requestType
+{
+    self.secureToken = secureToken;
+    self.requestType = requestType;
+    self.customScheme = customScheme;
+
+    return self;
+}
+
+-(NSURL *)buildWithUniqueScheme
+{
+    NSString *scheme = [self pbbaSchemeForRequestType:self.requestType];
+    
+    NSURLComponents *pbbaURLInvocationComponents = [NSURLComponents new];
+    pbbaURLInvocationComponents.scheme = scheme;
+    pbbaURLInvocationComponents.host = self.secureToken;
+    if(self.requestType != PBBARequestTypeRequestToPay) {
+        pbbaURLInvocationComponents.queryItems = @[[self apiNameParamForRequestType:self.requestType]];
+    }
+
+    return pbbaURLInvocationComponents.URL;
+}
+
 @end

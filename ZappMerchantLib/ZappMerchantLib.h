@@ -24,6 +24,7 @@
 #import "PBBAAppUtils.h"
 #import "PBBAButton.h"
 #import "PBBAPopupViewController.h"
+#import "PBBAAppPickerViewController.h"
 
 #endif
 

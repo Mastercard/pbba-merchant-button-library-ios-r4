@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -313,7 +313,7 @@
                                         </constraint>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                     <variation key="heightClass=compact-widthClass=compact">
                                         <mask key="constraints">
@@ -365,7 +365,7 @@
                                                 </constraint>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -543,6 +543,14 @@
                             <exclude reference="NeG-Hs-2Gx"/>
                         </mask>
                         <mask key="constraints">
+                            <exclude reference="BTP-dK-aU2"/>
+                            <exclude reference="E9W-AX-v7W"/>
+                            <exclude reference="Fq6-Nj-UEu"/>
+                            <exclude reference="NS2-mU-On7"/>
+                            <exclude reference="aVx-DV-MOb"/>
+                            <exclude reference="b5k-ET-Tna"/>
+                            <exclude reference="ewD-Dc-Ij4"/>
+                            <exclude reference="lI0-7j-LFy"/>
                             <exclude reference="HwD-if-8Bz"/>
                             <exclude reference="L8D-QL-GCt"/>
                             <exclude reference="OBV-Sw-K19"/>
@@ -553,14 +561,6 @@
                             <exclude reference="nWD-EQ-ubB"/>
                             <exclude reference="ojv-To-kXG"/>
                             <exclude reference="wZv-p5-17B"/>
-                            <exclude reference="BTP-dK-aU2"/>
-                            <exclude reference="E9W-AX-v7W"/>
-                            <exclude reference="Fq6-Nj-UEu"/>
-                            <exclude reference="NS2-mU-On7"/>
-                            <exclude reference="aVx-DV-MOb"/>
-                            <exclude reference="b5k-ET-Tna"/>
-                            <exclude reference="ewD-Dc-Ij4"/>
-                            <exclude reference="lI0-7j-LFy"/>
                             <exclude reference="7LI-5Y-u43"/>
                             <exclude reference="RVo-ao-7in"/>
                             <exclude reference="hKQ-V8-p7K"/>
@@ -570,6 +570,9 @@
                     </variation>
                     <variation key="heightClass=compact">
                         <mask key="constraints">
+                            <exclude reference="aVx-DV-MOb"/>
+                            <exclude reference="b5k-ET-Tna"/>
+                            <include reference="ewD-Dc-Ij4"/>
                             <exclude reference="HwD-if-8Bz"/>
                             <include reference="L8D-QL-GCt"/>
                             <exclude reference="LNa-cQ-kSN"/>
@@ -578,9 +581,6 @@
                             <exclude reference="lL3-9g-CsS"/>
                             <exclude reference="nWD-EQ-ubB"/>
                             <include reference="wZv-p5-17B"/>
-                            <exclude reference="aVx-DV-MOb"/>
-                            <exclude reference="b5k-ET-Tna"/>
-                            <include reference="ewD-Dc-Ij4"/>
                             <include reference="RVo-ao-7in"/>
                             <include reference="a8d-qv-2TL"/>
                             <exclude reference="hKQ-V8-p7K"/>
@@ -591,11 +591,11 @@
                     </variation>
                     <variation key="heightClass=compact-widthClass=compact">
                         <mask key="constraints">
-                            <exclude reference="L8D-QL-GCt"/>
-                            <include reference="bo5-ji-eud"/>
                             <exclude reference="Fq6-Nj-UEu"/>
                             <exclude reference="NS2-mU-On7"/>
                             <exclude reference="b5k-ET-Tna"/>
+                            <exclude reference="L8D-QL-GCt"/>
+                            <include reference="bo5-ji-eud"/>
                             <include reference="a8d-qv-2TL"/>
                         </mask>
                     </variation>
@@ -604,14 +604,14 @@
                             <include reference="NeG-Hs-2Gx"/>
                         </mask>
                         <mask key="constraints">
+                            <exclude reference="BTP-dK-aU2"/>
+                            <exclude reference="E9W-AX-v7W"/>
+                            <exclude reference="lI0-7j-LFy"/>
                             <include reference="LNa-cQ-kSN"/>
                             <include reference="aYh-xq-NPQ"/>
                             <exclude reference="ojv-To-kXG"/>
                             <include reference="sx0-of-FZJ"/>
                             <include reference="vEl-EK-dIX"/>
-                            <exclude reference="BTP-dK-aU2"/>
-                            <exclude reference="E9W-AX-v7W"/>
-                            <exclude reference="lI0-7j-LFy"/>
                             <include reference="7LI-5Y-u43"/>
                             <include reference="a8d-qv-2TL"/>
                             <include reference="kzb-tI-TfP"/>
@@ -619,9 +619,9 @@
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
+                            <include reference="ewD-Dc-Ij4"/>
                             <include reference="OBV-Sw-K19"/>
                             <include reference="h5M-1N-PIH"/>
-                            <include reference="ewD-Dc-Ij4"/>
                             <include reference="RVo-ao-7in"/>
                             <include reference="a8d-qv-2TL"/>
                             <include reference="uhH-d9-HQ6"/>

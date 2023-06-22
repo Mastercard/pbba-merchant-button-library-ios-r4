@@ -19,8 +19,6 @@
 //
 
 #import "PBBAPopupViewController.h"
-#import "PBBAPopupContainerController.h"
-#import "PBBAPopupCoordinator.h"
 #import "PBBAPopupScaleAspectFitAnimationContext.h"
 #import "UIView+ZPMLib.h"
 #import "NSBundle+ZPMLib.h"
@@ -30,8 +28,6 @@
 #import "NSError+ZPMLib.h"
 
 @interface PBBAPopupViewController () <UIViewControllerTransitioningDelegate, PBBAPopupCoordinatorDelegate>
-@property (nonatomic, strong) PBBAPopupContainerController *containerViewController;
-@property (nonatomic, strong) PBBAPopupCoordinator *popupCoordinator;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIImageView *footerMCLogo;
 @property (weak, nonatomic) IBOutlet UIImageView *headerPBBALogo;

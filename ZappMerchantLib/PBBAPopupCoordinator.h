@@ -168,6 +168,11 @@ typedef NS_ENUM(NSInteger, PBBAPopupEComLayoutType) {
 @property (nullable, nonatomic, copy) NSString *brn;
 
 /**
+ *  The expiration interval to be shown in the popup
+ */
+@property (nonatomic) NSUInteger expiryInterval;
+
+/**
  *  The PBBA API request type.
  */
 @property (nonatomic, assign) PBBARequestType requestType;
@@ -201,6 +206,9 @@ typedef NS_ENUM(NSInteger, PBBAPopupEComLayoutType) {
  *  The current popup E-Comm layout in case if currentPopupLayout is PBBAPopupLayoutTypeECom.
  */
 @property (nonatomic, assign) PBBAPopupEComLayoutType currentEComLayout;
+
+@property (nonatomic, weak) UIViewController * _Nullable presenter;
+
 
 /**
  *  Create an instance of PBBAPopupCoordinator.
@@ -262,6 +270,11 @@ typedef NS_ENUM(NSInteger, PBBAPopupEComLayoutType) {
  *  Open the bank app.
  */
 - (void)openBankingApp;
+
+/**
+ *  Open the  app picker.
+ */
+- (void)openAppPicker:(NSString *_Nullable)secureToken requestType:(PBBARequestType)requestType brn:(NSString *_Nullable)brn expiryInterval:(NSUInteger)expiryInterval presenter:(UIViewController *_Nullable)presenter;
 
 /**
  *  Save that CFI app was launched.

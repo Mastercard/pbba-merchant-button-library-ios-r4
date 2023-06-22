@@ -132,7 +132,7 @@
                                     initiator:PBBAPopupCloseActionInitiatorSelf
                                    completion:^{
                                        [self.popupCoordinator registerCFIAppLaunch];
-                                       [self.popupCoordinator openBankingApp];
+                                       [self.popupCoordinator openAppPicker:self.popupCoordinator.secureToken requestType:self.popupCoordinator.requestType brn:self.popupCoordinator.brn expiryInterval:self.popupCoordinator.expiryInterval presenter:self.popupCoordinator.presenter];
                                    }];
 }
 

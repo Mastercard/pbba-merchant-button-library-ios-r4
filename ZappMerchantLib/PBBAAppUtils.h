@@ -51,9 +51,9 @@
  *
  *  @return YES if the process of hand-off to CFI app was successful.
  */
-+ (BOOL)openBankingApp:(nonnull NSString *)secureToken
-           requestType:(PBBARequestType)requestType
-            NS_SWIFT_NAME(openBankingApp(secureToken:requestType:));
+//+ (BOOL)openBankingApp:(nonnull NSString *)secureToken
+//           requestType:(PBBARequestType)requestType
+//            NS_SWIFT_NAME(openBankingApp(secureToken:requestType:));
 
 /**
  *  Show PBBA popup view controller.
@@ -141,7 +141,7 @@ typedef enum {
  *
  *  @return YES if CFI app is installed.
  */
-+ (BOOL)isCFIAppAvailable DEPRECATED_MSG_ATTRIBUTE("Please use 'isCFIAppAvailableForRequestType:' method instead.");
+//+ (BOOL)isCFIAppAvailable DEPRECATED_MSG_ATTRIBUTE("Please use 'isCFIAppAvailableForRequestType:' method instead.");
 
 /**
  *  Open the PBBA enabled CFI app.
@@ -152,9 +152,9 @@ typedef enum {
  *
  *  @return YES if the process of hand-off to CFI app was successful.
  */
-+ (BOOL)openBankingApp:(nonnull NSString *)secureToken
-    NS_SWIFT_NAME(openBankingApp(secureToken:))
-    DEPRECATED_MSG_ATTRIBUTE("Please use 'openBankingApp:requestType:' method instead.");
+//+ (BOOL)openBankingApp:(nonnull NSString *)secureToken
+//    NS_SWIFT_NAME(openBankingApp(secureToken:))
+//    DEPRECATED_MSG_ATTRIBUTE("Please use 'openBankingApp:requestType:' method instead.");
 
 /**
  *  Show PBBA popup view controller.
@@ -171,11 +171,11 @@ typedef enum {
  *
  *  @return An instance of PBBAPopupViewController which has been presented.
  */
-+ (nullable PBBAPopupViewController *)showPBBAPopup:(nonnull UIViewController *)presenter
-                                        secureToken:(nonnull NSString *)secureToken
-                                                brn:(nonnull NSString *)brn
-                                           delegate:(nullable id<PBBAPopupViewControllerDelegate>)delegate
-                                            NS_SWIFT_NAME(showPBBAPopup(presenter:secureToken:brn:delegate:))
-                                            DEPRECATED_MSG_ATTRIBUTE("Please use 'showPBBAPopup:secureToken:brn:requestType:delegate:' method instead.");
+//+ (nullable PBBAPopupViewController *)showPBBAPopup:(nonnull UIViewController *)presenter
+//                                        secureToken:(nonnull NSString *)secureToken
+//                                                brn:(nonnull NSString *)brn
+//                                           delegate:(nullable id<PBBAPopupViewControllerDelegate>)delegate
+//                                            NS_SWIFT_NAME(showPBBAPopup(presenter:secureToken:brn:delegate:))
+//                                            DEPRECATED_MSG_ATTRIBUTE("Please use 'showPBBAPopup:secureToken:brn:requestType:delegate:' method instead.");
 
 @end

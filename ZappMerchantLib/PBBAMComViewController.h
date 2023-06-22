@@ -67,4 +67,6 @@
  */
 @property (nonatomic, copy) NSString *codeInstructionsTitle;
 
+@property (nonatomic, weak) UIViewController * _Nullable presenter;
+
 @end
